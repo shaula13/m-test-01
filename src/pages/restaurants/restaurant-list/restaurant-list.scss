@@ -1,0 +1,42 @@
+page-restaurant-list {
+ 
+    .tabb {
+        position: fixed;
+        bottom:0vh;
+        height: 50px;
+        background-color: #424242;
+        padding: 5px;
+        text-align: center;
+        color: white;
+        width: 50%;
+        z-index: 999;
+       
+        &:nth-of-type(2) {    
+            left: 50%;
+        }
+
+        &.item-md.item-block .item-inner {
+            border-bottom: none;
+        }
+    }
+    
+    .selected {
+        background-color:  #5f5e5e;
+    }
+    
+    .title-list {
+        text-align: center;
+    }    
+
+    .scroll-content {
+        margin-top: 56px;
+        margin-bottom: 50px;
+    }
+
+    .line {
+        &.item-md.item-block .item-inner {
+            padding-right: 8px;
+            border-bottom: 1px solid #dedede;
+        }
+    }
+}

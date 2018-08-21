@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Locali&Specialità</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content class="sfondo1">
+
+  <ion-item-group *ngIf="isLocal">
+    <ion-item-divider color="light" class="title-list">
+      Bar
+    </ion-item-divider>
+    <ion-item-group *ngFor="let rest of bars">
+      <ion-item (click)="navigate(rest.id)" class="line">{{ rest.name }}</ion-item>
+    </ion-item-group>
+    <ion-item-divider color="light" class="title-list">
+      Locali
+    </ion-item-divider>
+    <ion-item-group *ngFor="let rest of locals">
+      <ion-item (click)="navigate(rest.id)" class="line">{{ rest.name }}</ion-item>
+    </ion-item-group>
+    <ion-item-divider color="light" class="title-list">
+      Ristoranti
+    </ion-item-divider>
+    <ion-item-group *ngFor="let rest of nigths">
+      <ion-item (click)="navigate(rest.id)" class="line">{{ rest.name }}</ion-item>
+    </ion-item-group>
+  </ion-item-group>
+
+
+  <ion-item-group *ngIf="isFood" class="title-list">
+    <ion-item-divider color="light" class="title-list">
+      Primi
+    </ion-item-divider>
+    <ion-item-group *ngFor="let rest of firsts">
+      <ion-item (click)="navigate(rest.id)" class="line">{{ rest.name }}</ion-item>
+    </ion-item-group>
+    <ion-item-divider color="light" class="title-list">
+      Secondi
+    </ion-item-divider>
+    <ion-item-group *ngFor="let rest of seconds">
+      <ion-item (click)="navigate(rest.id)" class="line">{{ rest.name }}</ion-item>
+    </ion-item-group>
+    <ion-item-divider color="light" class="title-list">
+      Dolci
+    </ion-item-divider>
+    <ion-item-group *ngFor="let rest of desserts">
+      <ion-item (click)="navigate(rest.id)" class="line">{{ rest.name }}</ion-item>
+    </ion-item-group>
+  </ion-item-group>
+
+  <ion-item class="tabb" [ngClass]="isLocal ? 'selected' : ''" (click)="isLocalOnClick()">
+    <ion-icon name="restaurant" class="tab-margin"> Locali</ion-icon>
+  </ion-item>
+  <ion-item class="tabb" [ngClass]="isFood ? 'selected' : ''" (click)="isFoodOnClick()">
+    <ion-icon name="pizza" class="tab-icon"> Specialità</ion-icon>
+  </ion-item>
+
+</ion-content>

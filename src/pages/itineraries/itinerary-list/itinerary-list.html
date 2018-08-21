@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Itinerari&Luoghi</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="sfondo1">
+
+  <ion-item-group *ngIf="isItinerary">
+
+    <page-general-itinerary *ngFor="let itin of itineraries" [id]="itin.id"></page-general-itinerary>
+   
+  </ion-item-group>
+
+  <ion-item-group *ngIf="isPlace" class="title-list">
+    <ion-item-divider color="light" class="title-list">
+      Luoghi
+    </ion-item-divider>
+    <ion-item-group *ngFor="let rest of places">
+      <ion-item (click)="navigate(rest.id)" class="line">{{ rest.name }}</ion-item>
+    </ion-item-group>
+  </ion-item-group>
+
+  <ion-item class="tabb" [ngClass]="isItinerary ? 'selected' : ''" (click)="isItineraryOnClick()">
+    <ion-icon name="map" class="tab-margin"> Itinerari</ion-icon>
+  </ion-item>
+  <ion-item class="tabb" [ngClass]="isPlace ? 'selected' : ''" (click)="isPlaceOnClick()">
+    <ion-icon name="pin" class="tab-icon"> Luoghi</ion-icon>
+  </ion-item>
+
+</ion-content>

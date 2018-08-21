@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{  title  }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="sfondo1">
+
+  <ion-card>
+
+    <ion-item>
+      <h2>{{ item.name }}</h2>
+      <p>{{ item.category }}</p>
+    </ion-item>
+
+    <img src="../../../assets/imgs/{{ item.url }}">
+
+    <ion-card-content>
+      <p>{{ item.description }}</p>
+    </ion-card-content>
+
+    <ion-row *ngIf="secondParam">
+      <ion-col>
+        <button ion-button icon-start clear small (click)="load($event, item.wwwT)">
+          <ion-icon name="thumbs-up"></ion-icon>
+          <div>TripAdvisor</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-start clear small (click)="load($event, item.www)">
+          <ion-icon name="tablet-portrait"></ion-icon>
+          <div>Sito</div>
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+
+
+</ion-content>

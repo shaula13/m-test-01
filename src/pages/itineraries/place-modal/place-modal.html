@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Place</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-item-group *ngIf="secondParam" class="title-list">
+    <ion-item-divider color="light" class="title-list">
+      Tutti i Piatti
+    </ion-item-divider>
+    <ion-item-group *ngFor="let rest of allPlaces">
+      <ion-item class="line">{{rest.name}}</ion-item>
+    </ion-item-group>
+  </ion-item-group>
+  <ion-item-group *ngIf="!secondParam" class="title-list">
+    <ion-item-divider color="light" class="title-list">
+      Piatti
+    </ion-item-divider>
+    <ion-item-group *ngFor="let rest of places">
+      <ion-item class="line">{{rest.name}}</ion-item>
+    </ion-item-group>
+  </ion-item-group>
+
+</ion-content>
