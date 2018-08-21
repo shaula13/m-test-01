@@ -3,12 +3,13 @@ import { NavController, NavParams } from 'ionic-angular';
 import { PlaceModalPage } from '../place-modal/place-modal';
 import { DatabaseProvider } from '../../../providers/database/database';
 import { DomSanitizer } from '../../../../node_modules/@angular/platform-browser';
+import {BaseComponent} from "../../BaseComponent";
 
 @Component({
   selector: 'page-itinerary-list',
   templateUrl: 'itinerary-list.html',
 })
-export class ItineraryListPage {
+export class ItineraryListPage  extends  BaseComponent{
 
   itineraries = [];
   places = [];
@@ -17,14 +18,15 @@ export class ItineraryListPage {
   isPlace: boolean = false;
   // isDetail=false;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private databaseprovider: DatabaseProvider, public sanitizer: DomSanitizer) {
-    this.databaseprovider.getDatabaseState().subscribe(rdy => {
-      if (rdy) {
-        this.loadItineraryData();
-        this.loadPlaceData();
-      }
-    });
+  constructor(protected navCtrl: NavController, protected navParams: NavParams, protected databaseprovider: DatabaseProvider, public sanitizer: DomSanitizer) {
+    super(navCtrl, navParams, databaseprovider);
+  }
 
+  onInit() {}
+
+  loadData() {
+    this.loadItineraryData();
+    this.loadPlaceData();
   }
 
   loadItineraryData() {
