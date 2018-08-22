@@ -10,7 +10,7 @@
 
 <ion-content class="sfondo1">
 
-  <ion-item-group *ngIf="isLocal">
+  <ion-item-group *ngIf="isLocal && bars && locals && nigths">
     <ion-item-divider color="light" class="title-list">
       Bar
     </ion-item-divider>
@@ -32,7 +32,7 @@
   </ion-item-group>
 
 
-  <ion-item-group *ngIf="isFood" class="title-list">
+  <ion-item-group *ngIf="isFood && firsts && seconds && desserts" class="title-list">
     <ion-item-divider color="light" class="title-list">
       Primi
     </ion-item-divider>

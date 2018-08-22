@@ -1,45 +1,47 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import { LoadingController, NavController, NavParams } from 'ionic-angular';
 import { DatabaseProvider } from '../../../providers/database/database';
+import { BaseComponent } from "../../BaseComponent";
+import { DomSanitizer } from "@angular/platform-browser";
 
 @Component({
   selector: 'page-restaurant-modal',
   templateUrl: 'restaurant-modal.html',
 })
-export class RestaurantModalPage {
+export class RestaurantModalPage extends BaseComponent {
 
   public firstParam;
   public secondParam;
   item = {};
   title: string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private databaseprovider: DatabaseProvider) {
-    this.firstParam = navParams.get("firstPassed");
-    this.secondParam = navParams.get("secondPassed");
+  constructor(protected navCtrl: NavController, protected navParams: NavParams, protected databaseprovider: DatabaseProvider,
+              protected loadCtrl: LoadingController, public sanitizer: DomSanitizer) {
+    super(navCtrl, navParams, databaseprovider, loadCtrl);
+  }
+
+  onInit() {
+    this.firstParam = this.navParams.get("firstPassed");
+    this.secondParam = this.navParams.get("secondPassed");
+  }
+
+  async loadData() {
+    //this.spinnerShow(1000);
     if(this.secondParam) {
-      this.loadRestaurantForId();
+      await this.loadRestaurantForId().then(data => { this.item = data; });
       this.title = "Locale";
     } else {
-      this.loadFoodForId();
+      await this.loadFoodForId().then(data => { this.item = data; });
       this.title = "Specialità";
     }
   }
 
-  loadRestaurantForId() {
-    this.databaseprovider.getRestaurantForId(this.firstParam).then(data => {
-      this.item = data;
-    });
-  }
-  
-  loadFoodForId() {
-    this.databaseprovider.getFoodForId(this.firstParam).then(data => {
-      this.item = data;
-    });
+  async loadRestaurantForId() {
+    return await this.databaseprovider.getRestaurantForId(this.firstParam);
   }
 
-  load(event, www) {
-    event.preventDefault();
-    window.open(www, '_system', 'location=yes');
+  async loadFoodForId() {
+    return await this.databaseprovider.getFoodForId(this.firstParam);
   }
 
 }

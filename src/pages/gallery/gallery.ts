@@ -25,7 +25,7 @@ export class GalleryPage extends BaseComponent{
     await this.loadImageData().then(data => { this.images = data; });
   }
 
-  async loadImageData() {
+  async loadImageData(): Promise<any[]> {
     return await this.databaseprovider.getUnlockedImages();
   }
 

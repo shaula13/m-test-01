@@ -31,11 +31,11 @@ export class ItineraryListPage  extends  BaseComponent{
     await this.loadPlaceData().then(data => { this.places = data; });
   }
 
-  async loadItineraryData() {
+  async loadItineraryData(): Promise<any[]> {
     return await this.databaseprovider.getItireries();
   }
 
-  async loadPlaceData() {
+  async loadPlaceData(): Promise<any[]> {
     return await this.databaseprovider.getPlaces();
   }
 

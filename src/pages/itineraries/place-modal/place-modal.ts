@@ -26,7 +26,7 @@ export class PlaceModalPage extends  BaseComponent{
     await this.loadPlaceDataForId(this.firstParam).then(data => { this.place = data; });
   }
 
-  async loadPlaceDataForId(id) {
+  async loadPlaceDataForId(id): Promise<any[]> {
     return await this.databaseprovider.getPlaceForId(id);
   }
 
