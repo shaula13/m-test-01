@@ -9,13 +9,13 @@
 
 <ion-content class="sfondo1">
 
-  <ion-item-group *ngIf="isItinerary">
+  <ion-item-group *ngIf="isItinerary && itineraries && itineraries.length > 0">
 
     <page-general-itinerary *ngFor="let itin of itineraries" [id]="itin.id"></page-general-itinerary>
 
   </ion-item-group>
 
-  <ion-item-group *ngIf="isPlace" class="title-list">
+  <ion-item-group *ngIf="isPlace && places && places.length > 0" class="title-list">
     <ion-item-divider color="light" class="title-list">
       Luoghi
     </ion-item-divider>

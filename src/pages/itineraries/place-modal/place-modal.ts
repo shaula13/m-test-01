@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
-import {LoadingController, NavController, NavParams} from 'ionic-angular';
+import { LoadingController, NavController, NavParams } from 'ionic-angular';
 import { DatabaseProvider } from '../../../providers/database/database';
-import {BaseComponent} from "../../BaseComponent";
-
+import { BaseComponent } from "../../BaseComponent";
 
 @Component({
   selector: 'page-place-modal',
@@ -23,14 +22,12 @@ export class PlaceModalPage extends  BaseComponent{
     this.firstParam = this.navParams.get("firstPassed");
   }
 
-  loadData() {
-    this.loadPlaceDataForId(this.firstParam);
+  async loadData() {
+    await this.loadPlaceDataForId(this.firstParam).then(data => { this.place = data; });
   }
 
-  loadPlaceDataForId(id) {
-    this.databaseprovider.getPlaceForId(id).then(data => {
-      this.place = data;
-    });
+  async loadPlaceDataForId(id) {
+    return await this.databaseprovider.getPlaceForId(id);
   }
 
 }

@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import {LoadingController, NavController, NavParams} from 'ionic-angular';
+import { LoadingController, NavController, NavParams } from 'ionic-angular';
 import { PlaceModalPage } from '../place-modal/place-modal';
 import { DatabaseProvider } from '../../../providers/database/database';
 import { DomSanitizer } from '../../../../node_modules/@angular/platform-browser';
-import {BaseComponent} from "../../BaseComponent";
+import { BaseComponent } from "../../BaseComponent";
 
 @Component({
   selector: 'page-itinerary-list',
@@ -25,21 +25,18 @@ export class ItineraryListPage  extends  BaseComponent{
 
   onInit() {}
 
-  loadData() {
-    this.loadItineraryData();
-    this.loadPlaceData();
+  async loadData() {
+    this.spinnerShow(1000);
+    await this.loadItineraryData().then(data => { this.itineraries = data; });
+    await this.loadPlaceData().then(data => { this.places = data; });
   }
 
-  loadItineraryData() {
-    this.databaseprovider.getItireries().then(data => {
-      this.itineraries = data;
-    });
+  async loadItineraryData() {
+    return await this.databaseprovider.getItireries();
   }
 
-  loadPlaceData() {
-    this.databaseprovider.getPlaces().then(data => {
-      this.places = data;
-    });
+  async loadPlaceData() {
+    return await this.databaseprovider.getPlaces();
   }
 
   navigate(id) {
