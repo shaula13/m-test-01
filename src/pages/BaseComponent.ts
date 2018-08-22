@@ -1,10 +1,10 @@
 import { OnInit } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import {LoadingController, NavController, NavParams} from 'ionic-angular';
 import { DatabaseProvider } from '../providers/database/database';
 
 export abstract class BaseComponent implements OnInit {
 
-  constructor(protected navCtrl: NavController, protected navParams: NavParams, protected databaseprovider: DatabaseProvider) { }
+  constructor(protected navCtrl: NavController, protected navParams: NavParams, protected databaseprovider: DatabaseProvider, protected loadCtrl: LoadingController) { }
 
   ngOnInit() {
     this.onInit();
@@ -22,5 +22,15 @@ export abstract class BaseComponent implements OnInit {
     event.preventDefault();
     window.open(www, '_system', 'location=yes');
   }
+
+  spinnerShow(time) {
+    let loader = this.loadCtrl.create({
+      spinner: "bubbles",
+      content: "Caricamento",
+      duration: time
+    });
+    loader.present();
+  }
+
 
 }

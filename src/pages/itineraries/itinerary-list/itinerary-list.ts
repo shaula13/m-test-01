@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import {LoadingController, NavController, NavParams} from 'ionic-angular';
 import { PlaceModalPage } from '../place-modal/place-modal';
 import { DatabaseProvider } from '../../../providers/database/database';
 import { DomSanitizer } from '../../../../node_modules/@angular/platform-browser';
@@ -18,8 +18,9 @@ export class ItineraryListPage  extends  BaseComponent{
   isPlace: boolean = false;
   // isDetail=false;
 
-  constructor(protected navCtrl: NavController, protected navParams: NavParams, protected databaseprovider: DatabaseProvider, public sanitizer: DomSanitizer) {
-    super(navCtrl, navParams, databaseprovider);
+  constructor(protected navCtrl: NavController, protected navParams: NavParams, protected databaseprovider: DatabaseProvider,
+                protected loadCtrl: LoadingController, public sanitizer: DomSanitizer) {
+    super(navCtrl, navParams, databaseprovider, loadCtrl);
   }
 
   onInit() {}

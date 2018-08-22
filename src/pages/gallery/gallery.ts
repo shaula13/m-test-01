@@ -1,30 +1,34 @@
 import { DatabaseProvider } from './../../providers/database/database';
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { LoadingController, NavController, NavParams } from 'ionic-angular';
+import { DomSanitizer } from "@angular/platform-browser";
+import { BaseComponent } from "../BaseComponent";
 
 @Component({
   selector: 'page-gallery',
   templateUrl: 'gallery.html',
 })
-export class GalleryPage {
+export class GalleryPage extends BaseComponent{
 
   // image = {};
   images = [];
- 
-  constructor(public navCtrl: NavController, private databaseprovider: DatabaseProvider) {
-    this.databaseprovider.getDatabaseState().subscribe(rdy => {
-      if (rdy) {
-        this.loadImageData();
-      }
-    });
+
+  constructor(protected navCtrl: NavController, protected navParams: NavParams, protected databaseprovider: DatabaseProvider,
+              protected loadCtrl: LoadingController, public sanitizer: DomSanitizer) {
+    super(navCtrl, navParams, databaseprovider, loadCtrl);
   }
- 
-  loadImageData() {
-    this.databaseprovider.getUnlockedImages().then(data => {
-      this.images = data;
-    })
+
+  onInit() {}
+
+  async loadData() {
+    this.spinnerShow(1000);
+    await this.loadImageData().then(data => { this.images = data; });
   }
- 
+
+  async loadImageData() {
+    return await this.databaseprovider.getUnlockedImages();
+  }
+
   // updateImage() {
   //   this.databaseprovider.updateImage(parseInt(this.image['locked']), parseInt(this.image['id']))
   //   .then(data => {

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
+import {LoadingController, NavController, NavParams} from 'ionic-angular';
 import { DatabaseProvider } from '../../../providers/database/database';
 import {BaseComponent} from "../../BaseComponent";
 
@@ -14,8 +14,9 @@ export class PlaceModalPage extends  BaseComponent{
 
   place = {};
 
-  constructor(protected navCtrl: NavController, protected navParams: NavParams, protected databaseprovider: DatabaseProvider) {
-    super(navCtrl, navParams, databaseprovider);
+  constructor(protected navCtrl: NavController, protected navParams: NavParams, protected databaseprovider: DatabaseProvider,
+                protected loadCtrl: LoadingController) {
+    super(navCtrl, navParams, databaseprovider, loadCtrl);
   }
 
   onInit() {
