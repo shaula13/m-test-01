@@ -1,8 +1,10 @@
 page-game-list {
 
     .img{
-        width: 100%;
-        height: 210px;
+        //width: 100%;
+        //height: 210px;
+      width: 100%;
+      height: 210px;
     }
     .bg{
         background-color: rgb(172, 168, 168);
@@ -14,6 +16,6 @@ page-game-list {
     .card{
         margin-bottom: 25px;
         box-shadow: 4px 8px 6px rgb(78, 77, 77);
-        border: solid 0.5px rgba(179, 173, 173, 0.61);
+        border: solid 0.5px rgb(78, 77, 77);
     }
 }
