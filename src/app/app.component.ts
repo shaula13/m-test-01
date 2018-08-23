@@ -10,6 +10,7 @@ import { GalleryPage } from '../pages/gallery/gallery';
 import { ItineraryListPage } from '../pages/itineraries/itinerary-list/itinerary-list';
 import { InfoPage } from '../pages/info/info';
 import { LoginPage } from '../pages/special/login/login';
+import {ScreenOrientation} from "@ionic-native/screen-orientation";
 
 @Component({
   templateUrl: 'app.html'
@@ -23,7 +24,7 @@ export class MyApp {
 
   key: boolean = false;
 
-  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
+  constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen, public screenOrientation: ScreenOrientation) {
     this.initializeApp();
 
     // used for an example of ngFor and navigation
@@ -45,6 +46,7 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       this.statusBar.hide();
       this.splashScreen.hide();
+      this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.PORTRAIT_PRIMARY);
     });
   }
 

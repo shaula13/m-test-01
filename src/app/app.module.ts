@@ -20,6 +20,7 @@ import { InfoPage } from '../pages/info/info';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import {ScreenOrientation} from "@ionic-native/screen-orientation";
 
 import { DatabaseProvider } from '../providers/database/database';
 import { HttpModule } from '@angular/http';
@@ -72,6 +73,7 @@ import { SQLite } from '@ionic-native/sqlite';
   providers: [
     StatusBar,
     SplashScreen,
+    ScreenOrientation,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     DatabaseProvider,
     SQLitePorter,
