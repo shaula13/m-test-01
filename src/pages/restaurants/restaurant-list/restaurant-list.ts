@@ -23,6 +23,9 @@ export class RestaurantListPage extends BaseComponent {
   seconds = [];
   desserts = [];
 
+  imagesFood = [];
+  imagesRestaurant = [];
+
   constructor(protected navCtrl: NavController, protected navParams: NavParams, protected databaseprovider: DatabaseProvider,
               protected loadCtrl: LoadingController, public sanitizer: DomSanitizer) {
     super(navCtrl, navParams, databaseprovider, loadCtrl);
@@ -39,6 +42,9 @@ export class RestaurantListPage extends BaseComponent {
     await this.loadFoodsForCategoryData('Primo').then(data => this.firsts = data);
     await this.loadFoodsForCategoryData('Secondo').then(data => this.seconds = data);
     await this.loadFoodsForCategoryData('Dolce').then(data => this.desserts = data);
+
+    await this.loadImagesFood().then(data => this.imagesFood = data);
+    await this.loadImagesRestaurant().then(data => this.imagesRestaurant = data);
   }
 
   // loadRestaurantData() {
@@ -53,6 +59,14 @@ export class RestaurantListPage extends BaseComponent {
 
   async loadFoodsForCategoryData(category): Promise<any[]> {
     return await this.databaseprovider.getFoodsForCategory(category);
+  }
+
+  async loadImagesFood(): Promise<any[]> {
+    return await this.databaseprovider.getAllFoods();
+  }
+
+  async loadImagesRestaurant(): Promise<any[]> {
+    return await this.databaseprovider.getAllRestaurants();
   }
 
   navigate(id) {

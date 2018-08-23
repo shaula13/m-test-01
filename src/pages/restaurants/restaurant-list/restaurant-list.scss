@@ -1,5 +1,5 @@
 page-restaurant-list {
- 
+
     .tabb {
         position: fixed;
         bottom:0vh;
@@ -10,8 +10,8 @@ page-restaurant-list {
         color: white;
         width: 50%;
         z-index: 999;
-       
-        &:nth-of-type(2) {    
+
+        &:nth-of-type(2) {
             left: 50%;
         }
 
@@ -19,14 +19,14 @@ page-restaurant-list {
             border-bottom: none;
         }
     }
-    
+
     .selected {
         background-color:  #5f5e5e;
     }
-    
+
     .title-list {
         text-align: center;
-    }    
+    }
 
     .scroll-content {
         margin-top: 56px;
@@ -39,4 +39,8 @@ page-restaurant-list {
             border-bottom: 1px solid #dedede;
         }
     }
+
+  .swiper-container {
+    height: 200px !important;
+  }
 }

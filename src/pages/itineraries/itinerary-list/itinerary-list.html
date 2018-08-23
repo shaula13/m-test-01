@@ -16,6 +16,11 @@
   </ion-item-group>
 
   <ion-item-group *ngIf="isPlace && places && places.length > 0" class="title-list">
+    <ion-slides autoplay="5000" loop="true" speed="500" pager="true">
+      <ion-slide *ngFor="let img of places">
+        <img src="../../../assets/imgs/{{ img.url }}">
+      </ion-slide>
+    </ion-slides>
     <ion-item-divider color="light" class="title-list">
       Luoghi
     </ion-item-divider>

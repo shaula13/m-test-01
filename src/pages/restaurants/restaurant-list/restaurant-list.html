@@ -10,7 +10,12 @@
 
 <ion-content class="sfondo1">
 
-  <ion-item-group *ngIf="isLocal && bars && locals && nigths">
+  <ion-item-group *ngIf="isLocal && bars && locals && nigths && imagesRestaurant.length>0">
+    <ion-slides autoplay="5000" loop="true" speed="500" pager="true">
+      <ion-slide *ngFor="let img of imagesRestaurant">
+        <img src="../../../assets/imgs/{{ img.url }}">
+      </ion-slide>
+    </ion-slides>
     <ion-item-divider color="light" class="title-list">
       Bar
     </ion-item-divider>
@@ -32,7 +37,12 @@
   </ion-item-group>
 
 
-  <ion-item-group *ngIf="isFood && firsts && seconds && desserts" class="title-list">
+  <ion-item-group *ngIf="isFood && firsts && seconds && desserts && imagesFood.length>0" class="title-list">
+    <ion-slides autoplay="5000" loop="true" speed="500" pager="true">
+      <ion-slide *ngFor="let img of imagesFood">
+        <img src="../../../assets/imgs/{{ img.url }}">
+      </ion-slide>
+    </ion-slides>
     <ion-item-divider color="light" class="title-list">
       Primi
     </ion-item-divider>

@@ -6,7 +6,7 @@ page-itinerary-list {
     .tl {
         min-height: 50px;
         text-align: center;
-        
+
     }
 
     .tabb {
@@ -19,8 +19,8 @@ page-itinerary-list {
         color: white;
         width: 50%;
         z-index: 999;
-       
-        &:nth-of-type(2) {    
+
+        &:nth-of-type(2) {
             left: 50%;
         }
 
@@ -28,14 +28,14 @@ page-itinerary-list {
             border-bottom: none;
         }
     }
-    
+
     .selected {
         background-color:  #5f5e5e;
     }
-    
+
     .title-list {
         text-align: center;
-    }    
+    }
 
     .scroll-content {
         margin-top: 56px;
@@ -52,7 +52,7 @@ page-itinerary-list {
     .hide {
         visibility: hidden;
     }
-    
+
     .show {
         visibility: visible;
     }
@@ -62,4 +62,8 @@ page-itinerary-list {
         font-size: 1.4rem;
         line-height: 1.5;
     }
+
+  .swiper-container {
+    height: 200px !important;
+  }
 }
