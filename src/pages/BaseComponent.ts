@@ -15,8 +15,8 @@ export abstract class BaseComponent implements OnInit {
     });
   }
 
-  protected abstract onInit(): void;
-  protected abstract loadData(): void;
+  protected abstract onInit();
+  protected abstract loadData();
 
   load(event, www): void {
     event.preventDefault();

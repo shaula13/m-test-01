@@ -1,18 +1,40 @@
-<!--
-  Generated template for the GameOnePage page.
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>game-one</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Quiz</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="sfondo1">
+
+  <ion-item-group *ngIf="item && listGO && listGOC.length > 0">
+    <img src="../../../assets/imgs/games/{{ item.url }}" class="img"/>
+
+    <p class="titleQ">{{ item.quest }}</p>
+
+    <ion-item-group class="fix" *ngIf="answers && answers.length > 0">
+      <ion-item class="cenT"  *ngFor="let aw of answers" (click)="verifyAnswer(aw); questionSlider()">{{ aw }}</ion-item>
+    </ion-item-group>
+
+    <ion-row class="bar col-12" *ngIf="answers && answers.length > 0 && answersTrue > -1">
+      <ion-item-group class="col-6">
+        <ion-icon name="star" item-start></ion-icon>
+        <ion-icon name="{{ (life >= 2 ? 'star' : 'star-outline') }}" item-start></ion-icon>
+        <ion-icon name="{{ (life >= 3 ? 'star' : 'star-outline') }}" item-start></ion-icon>
+      </ion-item-group>
+      <!--<ion-item-group class="mg">
+        <ion-title>2:05</ion-title>
+      </ion-item-group>-->
+      <ion-item-group class="cal-6 center">
+        <ion-title>{{ answersTrue }}/{{ listGO.length }}</ion-title>
+      </ion-item-group>
+    </ion-row>
+
+  </ion-item-group>
 
 </ion-content>
+

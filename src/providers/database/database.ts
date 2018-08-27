@@ -6,12 +6,12 @@ import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 import { BehaviorSubject } from 'rxjs/Rx';
 import { Storage } from '@ionic/storage';
- 
+
 @Injectable()
 export class DatabaseProvider {
   database: SQLiteObject;
   private databaseReady: BehaviorSubject<boolean>;
- 
+
   constructor(public sqlitePorter: SQLitePorter, private storage: Storage, private sqlite: SQLite, private platform: Platform, private http: Http) {
     this.databaseReady = new BehaviorSubject(false);
     this.platform.ready().then(() => {
@@ -33,7 +33,7 @@ export class DatabaseProvider {
   }
 
 //General custom
- 
+
   fillDatabase() {
     this.http.get('assets/dummyDump.sql')
       .map(res => res.text())
@@ -50,8 +50,6 @@ export class DatabaseProvider {
   getDatabaseState() {
     return this.databaseReady.asObservable();
   }
- 
-//General custom
 
   private transformDataToArray(data): any[] {
     let array = [];
@@ -120,7 +118,7 @@ export class DatabaseProvider {
       return [];
     });
   }
-  
+
   getFoodsForCategory(category) {
     let data = [category];
     return this.database.executeSql("SELECT * FROM food WHERE category=?", data).then((data) => {
@@ -140,7 +138,7 @@ export class DatabaseProvider {
       return [];
     });
   }
-  
+
   getFoodForId(id) {
     let data = [id];
     return this.database.executeSql("SELECT * FROM food WHERE id=?", data).then((data) => {
@@ -171,8 +169,6 @@ export class DatabaseProvider {
     });
   }
 
-  
-
   getItineraryForId(id) {
     let data = [id];
     return this.database.executeSql("SELECT * FROM itinerary WHERE id=?", data).then((data) => {
@@ -202,5 +198,40 @@ export class DatabaseProvider {
       return [];
     });
   }
- 
+
+//game
+
+  //game-one
+
+  getAllGameOne() {
+    return this.database.executeSql("SELECT * FROM game_one", []).then((data) => {
+      return this.transformDataToArray(data);
+    }, err => {
+      console.log('Error: ', err);
+      return [];
+    });
+  }
+
+  getItemToGOForId(id) {
+    let data = [id];
+    return this.database.executeSql("SELECT * FROM game_one WHERE id=?", data).then((data) => {
+      return  data.rows.item(0);
+    }, err => {
+      console.log('Error: ', err);
+      return [];
+    });
+  }
+
+//game-two
+
+  getAllGameTwo() {
+    return this.database.executeSql("SELECT * FROM game_two", []).then((data) => {
+      return this.transformDataToArray(data);
+    }, err => {
+      console.log('Error: ', err);
+      return [];
+    });
+  }
+
+
 }

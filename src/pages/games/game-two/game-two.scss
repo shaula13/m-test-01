@@ -1,3 +1,43 @@
 page-game-two {
+  .bar {
+    position: fixed;
+    bottom: 0vh;
+    height: 35px;
+    /* background-color: #424242; */
+    padding: 5px;
+    text-align: center;
+    /* color: white; */
+    /* width: 50%; */
+    z-index: 999;
+  }
+
+  .img {
+    width: 100%;
+    height: 230px;
+    //padding-top: 5px;
+  }
+
+  .titleQ {
+    text-align: center;
+    font-size: 16px;
+    /* padding: 5px; */
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  .fix {
+    position: fixed;
+    bottom: 8vh;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .center {
+    margin: 0 auto;
+  }
+
+  .cenT {
+    text-align: center;
+  }
 
 }

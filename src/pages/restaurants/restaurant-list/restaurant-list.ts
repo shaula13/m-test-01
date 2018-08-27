@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 import { LoadingController, NavController, NavParams } from 'ionic-angular';
 import { RestaurantModalPage } from '../restaurant-modal/restaurant-modal';
 import { DatabaseProvider } from '../../../providers/database/database';
-import { DomSanitizer } from "@angular/platform-browser";
 import { BaseComponent } from "../../BaseComponent";
 
 @Component({
@@ -27,7 +26,7 @@ export class RestaurantListPage extends BaseComponent {
   imagesRestaurant = [];
 
   constructor(protected navCtrl: NavController, protected navParams: NavParams, protected databaseprovider: DatabaseProvider,
-              protected loadCtrl: LoadingController, public sanitizer: DomSanitizer) {
+              protected loadCtrl: LoadingController) {
     super(navCtrl, navParams, databaseprovider, loadCtrl);
   }
 

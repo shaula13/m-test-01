@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { ScreenOrientation } from "@ionic-native/screen-orientation";
 
 import { HomePage } from '../pages/home/home';
 import { GameListPage } from '../pages/games/game-list/game-list';
@@ -10,7 +11,6 @@ import { GalleryPage } from '../pages/gallery/gallery';
 import { ItineraryListPage } from '../pages/itineraries/itinerary-list/itinerary-list';
 import { InfoPage } from '../pages/info/info';
 import { LoginPage } from '../pages/special/login/login';
-import {ScreenOrientation} from "@ionic-native/screen-orientation";
 
 @Component({
   templateUrl: 'app.html'
