@@ -201,6 +201,45 @@ export class DatabaseProvider {
 
 //game
 
+  getAllGame() {
+    return this.database.executeSql("SELECT * FROM game", []).then((data) => {
+      return this.transformDataToArray(data);
+    }, err => {
+      console.log('Error: ', err);
+      return [];
+    });
+  }
+
+  getGameForId(id) {
+    let data = [id];
+    return this.database.executeSql("SELECT * FROM game WHERE id=?", data).then((data) => {
+      return  data.rows.item(0);
+    }, err => {
+      console.log('Error: ', err);
+      return [];
+    });
+  }
+
+  updateRecord(record, id) {
+    let data = [record, id];
+    return this.database.executeSql("UPDATE game SET record=? where id=?", data).then(data => {
+      return data;
+    }, err => {
+      console.log('Error: ', err);
+      return err;
+    });
+  }
+
+  getRecordForId(id) {
+    let data = [id];
+    return this.database.executeSql("SELECT record FROM game WHERE id=?", data).then((data) => {
+      return  data.rows.item(0);
+    }, err => {
+      console.log('Error: ', err);
+      return [];
+    });
+  }
+
   //game-one
 
   getAllGameOne() {
@@ -222,7 +261,7 @@ export class DatabaseProvider {
     });
   }
 
-//game-two
+  //game-two
 
   getAllGameTwo() {
     return this.database.executeSql("SELECT * FROM game_two", []).then((data) => {

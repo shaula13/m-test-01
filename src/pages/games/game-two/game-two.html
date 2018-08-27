@@ -17,20 +17,20 @@
     <p class="titleQ">{{ item.quest }}</p>
 
     <ion-item-group class="fix">
-      <ion-item class="cenT" (click)="verifyAnswer('true'); questionSlider()"> TRUE </ion-item>
-      <ion-item class="cenT" (click)="verifyAnswer('false'); questionSlider()"> FALSE </ion-item>
+      <ion-item class="cenT greenI" [ngClass]="isTrue1 == 1 ? 'green' : (isTrue1 == 2 ? 'red' : '')" (click)="gameTwo('true', 1)"><ion-icon name="checkmark-circle-outline"></ion-icon></ion-item>
+      <ion-item class="cenT redI" [ngClass]="isTrue2 == 1 ? 'green' : (isTrue2 == 2 ? 'red' : '')" (click)="gameTwo('false', 2)"> <ion-icon name="close-circle"></ion-icon></ion-item>
     </ion-item-group>
 
     <ion-row class="bar col-12" *ngIf="life && answersTrue > -1">
-      <ion-item-group class="col-6">
+      <ion-item-group class="center">
         <ion-icon name="star" item-start></ion-icon>
         <ion-icon name="{{ (life >= 2 ? 'star' : 'star-outline') }}" item-start></ion-icon>
         <ion-icon name="{{ (life >= 3 ? 'star' : 'star-outline') }}" item-start></ion-icon>
       </ion-item-group>
-      <!--<ion-item-group class="mg">
-        <ion-title>2:05</ion-title>
-      </ion-item-group>-->
-      <ion-item-group class="cal-6 center">
+      <ion-item-group class="cal-4 center">
+        <ion-icon name="information-circle"></ion-icon>
+      </ion-item-group>
+      <ion-item-group class="cal-4 center">
         <ion-title>{{ answersTrue }}/{{ listGT.length }}</ion-title>
       </ion-item-group>
     </ion-row>

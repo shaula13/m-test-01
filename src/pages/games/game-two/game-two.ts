@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import {LoadingController, NavController, NavParams} from 'ionic-angular';
 import {DatabaseProvider} from "../../../providers/database/database";
-import {HomePage} from "../../home/home";
 import {BaseComponent} from "../../BaseComponent";
+import {GameIntroPage} from "../game-intro/game-intro";
 
 @Component({
   selector: 'page-game-two',
@@ -17,6 +17,9 @@ export class GameTwoPage extends BaseComponent {
   life = 3;
   answTrue: string;
   answersTrue: number = 0;
+
+  isTrue1 = 0;
+  isTrue2 = 0;
 
   constructor(protected navCtrl: NavController, protected navParams: NavParams, protected databaseprovider: DatabaseProvider,
               protected loadCtrl: LoadingController) {
@@ -45,36 +48,61 @@ export class GameTwoPage extends BaseComponent {
     }
   }
 
-  async questionSlider() {
+  async checkRow(aClass, row) {
+    switch (row) {
+      case 1:
+        if (aClass == 'green') {
+          this.isTrue1 = 1;
+        }else if (aClass == "red") {
+          this.isTrue1 = 2;
+        } else {
+          this.isTrue1 = 0;
+        }
+        break;
+      case 2:
+        if (aClass == "green") {
+          this.isTrue2 = 1;
+        }else if (aClass == "red") {
+          this.isTrue2 = 2;
+        } else {
+          this.isTrue2 = 0;
+        }
+        break;
+      default:
+        this.isTrue1 = 0;
+        this.isTrue2 = 0;
+    }
+  }
 
-    //console.log(this.listGT);
-    //console.log(this.listGTC);
-    console.log(this.item);
-    //console.log(this.index);
-    //console.log(this.life);
+  async gameTwo(answ, row) {
 
+    if (answ != this.answTrue) {
+      await this.checkRow('red', row);
+      this.life = this.life - 1;
+    } else {
+      await this.checkRow('green', row);
+      this.answersTrue = this.answersTrue + 1;
+    }
+
+    let timeout = setTimeout( () => {
       if (this.index + 1 <= this.listGT.length && this.life > 0) {
+        this.checkRow('', row);
         this.listGTC.splice(0,1);
         this.answTrue = this.listGTC[0].answ;
         this.item = this.listGTC[0];
       } else {
         this.navigate();
-        console.log("fine " + this.index);
       }
       this.index++;
-  }
 
-  async verifyAnswer(answ) {
-    console.log(answ);
-    console.log(this.answTrue);
-    if (answ != this.answTrue) {
-      this.life = this.life - 1;
-    } else {
-      this.answersTrue = this.answersTrue + 1;
-    }
+    }, 1500);
   }
 
   navigate() {
-    this.navCtrl.push(HomePage);
+    this.navCtrl.push(GameIntroPage, {
+      firstPassed: 2,
+      secondPassed: this.answersTrue,
+      thirdPassed: true
+    });
   }
 }

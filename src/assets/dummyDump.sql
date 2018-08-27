@@ -137,3 +137,17 @@ INSERT INTO game_two(url, quest, answ, description) VALUES
 ('game-one/g_o2.jpg','lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??2', 'false', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum2'),
 ('game-one/g_o3.jpg','lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??3', 'true', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum3');
 
+
+CREATE TABLE IF NOT EXISTS game(
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    title TEXT,
+    description TEXT,
+    record INTEGER,
+    tot INTEGER
+);
+INSERT INTO game(title, description, record, tot) VALUES
+('title1', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1 1', '16', '100'),
+('title2', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1 2', '18', '100'),
+('title3', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1 3', '10', '100');
+
+

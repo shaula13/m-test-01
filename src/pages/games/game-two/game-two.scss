@@ -2,13 +2,14 @@ page-game-two {
   .bar {
     position: fixed;
     bottom: 0vh;
-    height: 35px;
+    height: 45px;
     /* background-color: #424242; */
     padding: 5px;
     text-align: center;
     /* color: white; */
     /* width: 50%; */
     z-index: 999;
+    line-height: 45px;
   }
 
   .img {
@@ -27,7 +28,7 @@ page-game-two {
 
   .fix {
     position: fixed;
-    bottom: 8vh;
+    bottom: 7vh;
     padding: 5px;
     width: 100%;
   }
@@ -37,6 +38,27 @@ page-game-two {
   }
 
   .cenT {
+    text-align: center;
+    font-size: 50px;
+  }
+
+  .greenI {
+    color: green;
+  }
+
+  .redI {
+    color: red;
+  }
+
+  .red {
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
+
+  .green {
+    background-color: green;
+    color: white;
     text-align: center;
   }
 
