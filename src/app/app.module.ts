@@ -11,6 +11,7 @@ import { RestaurantListPage } from '../pages/restaurants/restaurant-list/restaur
 import { RestaurantModalPage } from '../pages/restaurants/restaurant-modal/restaurant-modal';
 import { GameListPage } from '../pages/games/game-list/game-list';
 import { GameIntroPage } from '../pages/games/game-intro/game-intro';
+import { ModalGamePage } from '../pages/games/modal-game/modal-game';
 import { GameOnePage } from '../pages/games/game-one/game-one';
 import { GameTwoPage } from '../pages/games/game-two/game-two';
 import { GameThreePage } from '../pages/games/game-three/game-three';
@@ -40,6 +41,7 @@ import { SQLite } from '@ionic-native/sqlite';
     RestaurantModalPage,
     GameListPage,
     GameIntroPage,
+    ModalGamePage,
     GameOnePage,
     GameTwoPage,
     GameThreePage,
@@ -65,6 +67,7 @@ import { SQLite } from '@ionic-native/sqlite';
     RestaurantModalPage,
     GameListPage,
     GameIntroPage,
+    ModalGamePage,
     GameOnePage,
     GameTwoPage,
     GameThreePage,

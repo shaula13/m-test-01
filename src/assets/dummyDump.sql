@@ -100,6 +100,7 @@ INSERT INTO intiraries_place(intirary_id ,place_id) VALUES
 CREATE TABLE IF NOT EXISTS game_one(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     url TEXT,
+    url2 TEXT,
     quest TEXT,
     answ TEXT,
     answ1 TEXT,
@@ -107,35 +108,36 @@ CREATE TABLE IF NOT EXISTS game_one(
     answ3 TEXT,
     description TEXT
 );
-INSERT INTO game_one(url, quest, answ, answ1, answ2, answ3, description) VALUES
-('game-one/g_o1.jpg','lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 'answ', 'answ1', 'answ2', 'answ3', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'),
-('game-one/g_o2.jpg','lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??2', 'answ', 'answ1', 'answ2', 'answ3', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum2'),
-('game-one/g_o3.jpg','lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??3', 'answ', 'answ1', 'answ2', 'answ3', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum3'),
-('game-one/g_o1.jpg','lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 'answ', 'answ1', 'answ2', 'answ3', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'),
-('game-one/g_o2.jpg','lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??2', 'answ', 'answ1', 'answ2', 'answ3', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum2'),
-('game-one/g_o3.jpg','lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??3', 'answ', 'answ1', 'answ2', 'answ3', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum3'),
-('game-one/g_o1.jpg','lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 'answ', 'answ1', 'answ2', 'answ3', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'),
-('game-one/g_o2.jpg','lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??2', 'answ', 'answ1', 'answ2', 'answ3', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum2'),
-('game-one/g_o3.jpg','lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??3', 'answ', 'answ1', 'answ2', 'answ3', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum3');
+INSERT INTO game_one(url, url2, quest, answ, answ1, answ2, answ3, description) VALUES
+('game-one/g_o1.jpg', 'game-one/g_o1.jpg', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 'answ', 'answ1', 'answ2', 'answ3', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'),
+('game-one/g_o2.jpg', 'game-one/g_o2.jpg', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??2', 'answ', 'answ1', 'answ2', 'answ3', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum2'),
+('game-one/g_o3.jpg', 'game-one/g_o3.jpg', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??3', 'answ', 'answ1', 'answ2', 'answ3', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum3'),
+('game-one/g_o1.jpg', 'game-one/g_o1.jpg', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 'answ', 'answ1', 'answ2', 'answ3', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'),
+('game-one/g_o2.jpg', 'game-one/g_o2.jpg', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??2', 'answ', 'answ1', 'answ2', 'answ3', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum2'),
+('game-one/g_o3.jpg', 'game-one/g_o3.jpg', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??3', 'answ', 'answ1', 'answ2', 'answ3', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum3'),
+('game-one/g_o1.jpg', 'game-one/g_o1.jpg', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 'answ', 'answ1', 'answ2', 'answ3', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'),
+('game-one/g_o2.jpg', 'game-one/g_o2.jpg', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??2', 'answ', 'answ1', 'answ2', 'answ3', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum2'),
+('game-one/g_o3.jpg', 'game-one/g_o3.jpg', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??3', 'answ', 'answ1', 'answ2', 'answ3', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum3');
 
 
 CREATE TABLE IF NOT EXISTS game_two(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     url TEXT,
+    url2 TEXT,
     quest TEXT,
     answ TEXT,
     description TEXT
 );
-INSERT INTO game_two(url, quest, answ, description) VALUES
-('game-one/g_o1.jpg','lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 'true', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'),
-('game-one/g_o2.jpg','lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??2', 'false', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum2'),
-('game-one/g_o3.jpg','lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??3', 'true', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum3'),
-('game-one/g_o1.jpg','lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 'false', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'),
-('game-one/g_o2.jpg','lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??2', 'true', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum2'),
-('game-one/g_o3.jpg','lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??3', 'false', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum3'),
-('game-one/g_o1.jpg','lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 'true', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'),
-('game-one/g_o2.jpg','lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??2', 'false', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum2'),
-('game-one/g_o3.jpg','lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??3', 'true', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum3');
+INSERT INTO game_two(url, url2, quest, answ, description) VALUES
+('game-one/g_o1.jpg', 'game-one/g_o1.jpg', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 'true', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'),
+('game-one/g_o2.jpg', 'game-one/g_o2.jpg', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??2', 'false', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum2'),
+('game-one/g_o3.jpg', 'game-one/g_o3.jpg', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??3', 'true', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum3'),
+('game-one/g_o1.jpg', 'game-one/g_o1.jpg', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 'false', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'),
+('game-one/g_o2.jpg', 'game-one/g_o2.jpg', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??2', 'true', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum2'),
+('game-one/g_o3.jpg', 'game-one/g_o3.jpg', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??3', 'false', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum3'),
+('game-one/g_o1.jpg', 'game-one/g_o1.jpg', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 'true', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'),
+('game-one/g_o2.jpg', 'game-one/g_o2.jpg', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??2', 'false', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum2'),
+('game-one/g_o3.jpg', 'game-one/g_o3.jpg', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??3', 'true', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum3');
 
 
 CREATE TABLE IF NOT EXISTS game(
@@ -146,8 +148,8 @@ CREATE TABLE IF NOT EXISTS game(
     tot INTEGER
 );
 INSERT INTO game(title, description, record, tot) VALUES
-('title1', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1 1', '16', '100'),
-('title2', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1 2', '18', '100'),
-('title3', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1 3', '10', '100');
+('title1', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1 1', '0', '100'),
+('title2', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1 2', '0', '100'),
+('title3', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1 3', '0', '100');
 
 

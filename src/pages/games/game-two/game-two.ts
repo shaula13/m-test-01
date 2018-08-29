@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import {LoadingController, NavController, NavParams} from 'ionic-angular';
+import {Events, LoadingController, ModalController, NavController, NavParams} from 'ionic-angular';
 import {DatabaseProvider} from "../../../providers/database/database";
 import {BaseComponent} from "../../BaseComponent";
-import {GameIntroPage} from "../game-intro/game-intro";
+import {ModalGamePage} from "../modal-game/modal-game";
 
 @Component({
   selector: 'page-game-two',
@@ -15,14 +15,17 @@ export class GameTwoPage extends BaseComponent {
   item = {};
   index = 1;
   life = 3;
+  help = 1;
   answTrue: string;
   answersTrue: number = 0;
 
   isTrue1 = 0;
   isTrue2 = 0;
 
+  games = [];
+
   constructor(protected navCtrl: NavController, protected navParams: NavParams, protected databaseprovider: DatabaseProvider,
-              protected loadCtrl: LoadingController) {
+              protected loadCtrl: LoadingController, public events: Events, private modalCtrl: ModalController) {
     super(navCtrl, navParams, databaseprovider, loadCtrl);
   }
 
@@ -30,11 +33,16 @@ export class GameTwoPage extends BaseComponent {
 
   async loadData() {
     //this.spinnerShow(1000);
+    await this.loadGameData().then(data => this.games = data);
     await this.loadGTData().then(data => this.listGT = data);
     this.listGT.forEach(e => this.listGTC.push(e));
     await this.shuffleList(this.listGTC);
     this.item = this.listGTC[0];
     this.answTrue = this.listGTC[0].answ;
+  }
+
+  async loadGameData(): Promise<any[]> {
+    return await this.databaseprovider.getAllGame();
   }
 
   async loadGTData(): Promise<any[]> {
@@ -74,6 +82,13 @@ export class GameTwoPage extends BaseComponent {
     }
   }
 
+  async updateRecord() {
+    let record = this.games[0].record;
+    if (record < this.answersTrue) {
+      this.databaseprovider.updateRecord(this.answersTrue, 2);
+    }
+  }
+
   async gameTwo(answ, row) {
 
     if (answ != this.answTrue) {
@@ -91,18 +106,32 @@ export class GameTwoPage extends BaseComponent {
         this.answTrue = this.listGTC[0].answ;
         this.item = this.listGTC[0];
       } else {
-        this.navigate();
+        this.updateRecord();
+        this.publishEvent();
       }
       this.index++;
 
     }, 1500);
   }
 
-  navigate() {
-    this.navCtrl.push(GameIntroPage, {
-      firstPassed: 2,
-      secondPassed: this.answersTrue,
-      thirdPassed: true
-    });
+  publishEvent() {
+    this.events.publish('reloadGameIntro');
+    this.navCtrl.pop();
   }
+
+  openModal() {
+    const modal = this.modalCtrl.create(ModalGamePage, {
+      url: this.listGTC[0].url2,
+      answ: this.listGTC[0].answ,
+      description: this.listGTC[0].description
+    }, {
+      enableBackdropDismiss: false,
+    });
+
+    if (this.help > 0) {
+      modal.present();
+      this.help = this.help -1;
+    }
+  }
+
 }

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {LoadingController, NavController, NavParams} from 'ionic-angular';
+import {Events, LoadingController, NavController, NavParams} from 'ionic-angular';
 import {DatabaseProvider} from "../../../providers/database/database";
 import {BaseComponent} from "../../BaseComponent";
 import {GameOnePage} from "../game-one/game-one";
@@ -13,46 +13,28 @@ import {GameThreePage} from "../game-three/game-three";
 export class GameIntroPage extends BaseComponent {
 
   public firstParam;
-  public secondParam;
-  public thirdParam;
   games = [];
   game = {};
-  record = {};
 
   constructor(protected navCtrl: NavController, protected navParams: NavParams, protected databaseprovider: DatabaseProvider,
-              protected loadCtrl: LoadingController) {
+              protected loadCtrl: LoadingController, public events: Events) {
     super(navCtrl, navParams, databaseprovider, loadCtrl);
+
+    this.listenEvents();
   }
 
   onInit() {
     this.firstParam = this.navParams.get("firstPassed");
-    this.secondParam = this.navParams.get("secondPassed");
-    this.thirdParam = this.navParams.get("thirdPassed");
   }
 
   async loadData() {
     //this.spinnerShow(1000);
     await this.loadGameData().then(data => this.games = data);
-    await this.getGamePage();
+    this.game = this.games[this.firstParam];
   }
 
   async loadGameData(): Promise<any[]> {
     return await this.databaseprovider.getAllGame();
-  }
-
-  async updateRecord(id) {
-    if (this.thirdParam) {
-      if (this.record < this.secondParam) {
-        await this.databaseprovider.updateRecord(this.secondParam, id);
-        await this.loadData();
-      }
-    }
-  }
-
-  async getGamePage() {
-    this.record = this.games[this.firstParam].record;
-    await this.updateRecord(this.firstParam);
-    this.game = this.games[this.firstParam];
   }
 
   navigate() {
@@ -69,4 +51,9 @@ export class GameIntroPage extends BaseComponent {
     }
   }
 
+  listenEvents(){
+    this.events.subscribe('reloadGameIntro',() => {
+      this.loadData();
+    });
+  }
 }

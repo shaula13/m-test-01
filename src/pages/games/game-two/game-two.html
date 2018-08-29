@@ -23,12 +23,12 @@
 
     <ion-row class="bar col-12" *ngIf="life && answersTrue > -1">
       <ion-item-group class="center">
-        <ion-icon name="star" item-start></ion-icon>
+        <ion-icon name="{{ (life >= 1 ? 'star' : 'star-outline') }}" item-start></ion-icon>
         <ion-icon name="{{ (life >= 2 ? 'star' : 'star-outline') }}" item-start></ion-icon>
         <ion-icon name="{{ (life >= 3 ? 'star' : 'star-outline') }}" item-start></ion-icon>
       </ion-item-group>
       <ion-item-group class="cal-4 center">
-        <ion-icon name="information-circle"></ion-icon>
+        <ion-item class="sfondo1 max" (click)="openModal()"><ion-icon name="{{ (help > 0 ? 'information-circle' : '') }}"></ion-icon></ion-item>
       </ion-item-group>
       <ion-item-group class="cal-4 center">
         <ion-title>{{ answersTrue }}/{{ listGT.length }}</ion-title>

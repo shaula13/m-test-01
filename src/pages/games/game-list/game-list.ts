@@ -13,8 +13,7 @@ export class GameListPage {
 
   navigate(game) {
     this.navCtrl.push(GameIntroPage, {
-      firstPassed: game,
-      thirdPassed: false
+      firstPassed: game
     });
   }
 }

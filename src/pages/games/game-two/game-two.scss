@@ -10,6 +10,7 @@ page-game-two {
     /* width: 50%; */
     z-index: 999;
     line-height: 45px;
+    font-size: 20px;
   }
 
   .img {
@@ -60,6 +61,10 @@ page-game-two {
     background-color: green;
     color: white;
     text-align: center;
+  }
+
+  .max {
+    font-size: 20px;
   }
 
 }

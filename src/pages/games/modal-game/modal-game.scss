@@ -1,0 +1,39 @@
+page-modal-game {
+
+  background-color: rgba(0,0,0,0.5);
+
+  .modal-content {
+    position: absolute;
+    overflow: hidden;
+    max-width: 280px;
+    border-radius: 2px;
+    width: 280px;
+    height: 380px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 0;
+    box-shadow: 0 16px 20px rgba(0,0,0,.4);
+    text-align: center;
+  }
+
+  .scroll {
+    position:relative;
+    height: 100%;
+    padding-bottom: 45px;
+    overflow: scroll;
+    max-height: 40vh;
+  }
+
+  .btn-bottom {
+    position: fixed;
+    bottom: calc((100vh - 380px)/2 - 5px);
+    width: 280px;
+    bottom: calc(50vh - 190px - 4px);
+    margin: 0;
+  }
+
+}
+

@@ -1,8 +1,8 @@
 import {Component} from '@angular/core';
-import {LoadingController, NavController, NavParams} from 'ionic-angular';
+import {Events, LoadingController, ModalController, NavController, NavParams} from 'ionic-angular';
 import {DatabaseProvider} from "../../../providers/database/database";
 import {BaseComponent} from "../../BaseComponent";
-import {GameIntroPage} from "../game-intro/game-intro";
+import {ModalGamePage} from "../modal-game/modal-game";
 
 @Component({
   selector: 'page-game-one',
@@ -16,6 +16,7 @@ export class GameOnePage extends BaseComponent {
   item = {};
   index = 1;
   life = 3;
+  help = 1;
   answTrue: string;
   answersTrue: number = 0;
 
@@ -29,8 +30,10 @@ export class GameOnePage extends BaseComponent {
   isTrue3 = 0;
   isTrue4 = 0;
 
+  games = [];
+
   constructor(protected navCtrl: NavController, protected navParams: NavParams, protected databaseprovider: DatabaseProvider,
-                protected loadCtrl: LoadingController) {
+              protected loadCtrl: LoadingController, public events: Events, private modalCtrl: ModalController) {
     super(navCtrl, navParams, databaseprovider, loadCtrl);
   }
 
@@ -38,6 +41,7 @@ export class GameOnePage extends BaseComponent {
 
   async loadData() {
     //this.spinnerShow(1000);
+    await this.loadGameData().then(data => this.games = data);
     await this.loadGOData().then(data => this.listGO = data);
     this.listGO.forEach(e => this.listGOC.push(e));
     await this.shuffleList(this.listGOC);
@@ -46,6 +50,10 @@ export class GameOnePage extends BaseComponent {
     await this.shuffleList(this.answers);
     await this.getAnswer2();
     this.answTrue = this.listGOC[0].answ;
+  }
+
+  async loadGameData(): Promise<any[]> {
+    return await this.databaseprovider.getAllGame();
   }
 
   async loadGOData(): Promise<any[]> {
@@ -119,6 +127,13 @@ export class GameOnePage extends BaseComponent {
     }
   }
 
+  async updateRecord() {
+    let record = this.games[0].record;
+    if (record < this.answersTrue) {
+      this.databaseprovider.updateRecord(this.answersTrue, 1);
+    }
+  }
+
   async gameOne(answ, row) {
 
     if (answ != this.answTrue) {
@@ -140,18 +155,31 @@ export class GameOnePage extends BaseComponent {
         this.shuffleList(this.answers);
         this.getAnswer2();
       } else {
-        this.navigate();
+        this.updateRecord();
+        this.publishEvent();
       }
       this.index++;
 
     }, 1500);
   }
 
-  navigate() {
-    this.navCtrl.push(GameIntroPage, {
-      firstPassed: 1,
-      secondPassed: this.answersTrue,
-      thirdPassed: true
+  publishEvent() {
+    this.events.publish('reloadGameIntro');
+    this.navCtrl.pop();
+  }
+
+  openModal() {
+    const modal = this.modalCtrl.create(ModalGamePage, {
+      url: this.listGOC[0].url2,
+      answ: this.listGOC[0].answ,
+      description: this.listGOC[0].description
+    }, {
+      enableBackdropDismiss: false,
     });
+
+    if (this.help > 0) {
+      modal.present();
+      this.help = this.help -1;
+    }
   }
 }
