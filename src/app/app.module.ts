@@ -16,8 +16,9 @@ import { GameOnePage } from '../pages/games/game-one/game-one';
 import { GameTwoPage } from '../pages/games/game-two/game-two';
 import { GameThreePage } from '../pages/games/game-three/game-three';
 import { GalleryPage } from '../pages/gallery/gallery';
-import { LoginPage } from '../pages/special/login/login';
 import { SpecialDayPage } from '../pages/special/special-day/special-day';
+import { StepModalPage } from '../pages/special/step-modal/step-modal';
+import { LoginPage } from '../pages/login/login';
 import { InfoPage } from '../pages/info/info';
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -47,6 +48,7 @@ import { SQLite } from '@ionic-native/sqlite';
     GameThreePage,
     GalleryPage,
     SpecialDayPage,
+    StepModalPage,
     LoginPage,
     InfoPage
   ],
@@ -73,6 +75,7 @@ import { SQLite } from '@ionic-native/sqlite';
     GameThreePage,
     GalleryPage,
     SpecialDayPage,
+    StepModalPage,
     LoginPage,
     InfoPage
   ],

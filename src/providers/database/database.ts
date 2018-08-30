@@ -272,5 +272,63 @@ export class DatabaseProvider {
     });
   }
 
+ //SpecialDay
+
+  getAllSteps() {
+    return this.database.executeSql("SELECT * FROM special_day", []).then((data) => {
+      return this.transformDataToArray(data);
+    }, err => {
+      console.log('Error: ', err);
+      return [];
+    });
+  }
+
+  getStepForId(id) {
+    let data = [id];
+    return this.database.executeSql("SELECT * FROM special_day WHERE id=?", data).then((data) => {
+      return  data.rows.item(0);
+    }, err => {
+      console.log('Error: ', err);
+      return [];
+    });
+  }
+
+  getUnlockedSteps() {
+    return this.database.executeSql("SELECT * FROM special_day WHERE locked='0'", []).then((data) => {
+      return this.transformDataToArray(data);
+    }, err => {
+      console.log('Error: ', err);
+      return [];
+    });
+  }
+
+  updateStep(id) {
+    let data = [id];
+    return this.database.executeSql("UPDATE special_day SET locked='0' where id=?", data).then(data => {
+      return data;
+    }, err => {
+      console.log('Error: ', err);
+      return err;
+    });
+  }
+  resetSteps() {
+    return this.database.executeSql("UPDATE special_day SET locked='1'", []).then(data => {
+      return data;
+    }, err => {
+      console.log('Error: ', err);
+      return err;
+    });
+  }
+
+  updateAllSteps() {
+    return this.database.executeSql("UPDATE special_day SET locked='0'", []).then(data => {
+      return data;
+    }, err => {
+      console.log('Error: ', err);
+      return err;
+    });
+  }
+
+
 
 }

@@ -1,24 +1,66 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the SpecialDayPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import {Events, LoadingController, ModalController, NavController, NavParams} from 'ionic-angular';
+import {BaseComponent} from "../../BaseComponent";
+import {DomSanitizer} from "@angular/platform-browser";
+import {DatabaseProvider} from "../../../providers/database/database";
+import {StepModalPage} from "../step-modal/step-modal";
+import {LoginPage} from "../../login/login";
 
 @Component({
   selector: 'page-special-day',
   templateUrl: 'special-day.html',
 })
-export class SpecialDayPage {
+export class SpecialDayPage extends BaseComponent {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  steps = [];
+  showNewStep = false;
+
+  constructor(protected navCtrl: NavController, protected navParams: NavParams, protected databaseprovider: DatabaseProvider,
+              protected loadCtrl: LoadingController, public sanitizer: DomSanitizer, private modalCtrl: ModalController, public events: Events) {
+    super(navCtrl, navParams, databaseprovider, loadCtrl);
+
+    this.listenEvents();
+    if(this.steps.length < 8) {
+      this.showNewStep = true;
+    }
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SpecialDayPage');
+  onInit() {}
+
+  async loadData() {
+    //this.spinnerShow(1000);
+    await this.loadStepUnlocked().then(data => { this.steps = data; });
+  }
+
+  async loadStepUnlocked() {
+    return await this.databaseprovider.getUnlockedSteps();
+  }
+
+  listenEvents(){
+    this.events.subscribe('reloadStepList',() => {
+      this.loadData();
+      if(this.steps.length < 8) {
+        this.showNewStep = true;
+      }
+    });
+  }
+
+  openModal() {
+    const modal = this.modalCtrl.create(LoginPage, { }, {
+      enableBackdropDismiss: false,
+    });
+
+    modal.present();
+  }
+
+  goToNewStep() {
+    this.openModal()
+  }
+
+  navigate(id) {
+    this.navCtrl.push(StepModalPage, {
+      firstPassed: id
+    });
   }
 
 }

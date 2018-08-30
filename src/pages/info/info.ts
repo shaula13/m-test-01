@@ -1,24 +1,32 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the InfoPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { ModalController, NavController, NavParams } from 'ionic-angular';
+import { LoginPage } from "../login/login";
 
 @Component({
   selector: 'page-info',
   templateUrl: 'info.html',
 })
-export class InfoPage {
+export class InfoPage{
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  click = 0;
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private modalCtrl: ModalController) { }
+
+  countClick() {
+    this.click++;
+    console.log(this.click);
+    if (this.click == 10) {
+      this.openModal();
+    }
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad InfoPage');
+  openModal() {
+    const modal = this.modalCtrl.create(LoginPage, { }, {
+      enableBackdropDismiss: false,
+    });
+
+    modal.present();
   }
+
 
 }

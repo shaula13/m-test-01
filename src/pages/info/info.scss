@@ -1,3 +1,29 @@
 page-info {
 
+  .size {
+    margin: 30px auto;
+    width: 55%;
+  }
+
+  .mg-b4 {
+    margin-bottom: 40px;
+  }
+
+  .mg-b {
+    margin-bottom: 16px;
+    box-shadow: 4px 8px 6px rgb(78, 77, 77);
+    border: solid 0.5px rgba(167, 166, 166, 0.6);
+  }
+
+  .t-right {
+    float: right;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+
+  .t-left {
+    margin-left: 20px;
+    font-size: 16px;
+  }
+
 }

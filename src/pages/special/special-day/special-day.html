@@ -1,18 +1,35 @@
-<!--
-  Generated template for the SpecialDayPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
-
   <ion-navbar>
-    <ion-title>special-day</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Giornata regalo</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
-<ion-content padding>
+<ion-content class="sfondo1">
+
+  <ion-item-group *ngIf="steps && steps.length>0">
+
+    <ion-slides autoplay="5000" loop="true" speed="500" pager="true">
+      <ion-slide *ngFor="let step of steps">
+        <img src="../../../assets/imgs/{{ step.url }}">
+      </ion-slide>
+    </ion-slides>
+
+    <ion-item-divider color="light" class="title-list">
+      Step Lista
+    </ion-item-divider>
+    <ion-item-group *ngFor="let step of steps">
+      <ion-item (click)="navigate(step.id)" class="line">{{ step.title }}</ion-item>
+    </ion-item-group>
+
+    <ion-buttons *ngIf="showNewStep" class="title-list btn-mg">
+      <button ion-button (click)="goToNewStep()">Prossimo Step</button>
+    </ion-buttons>
+
+  </ion-item-group>
+
 
 </ion-content>

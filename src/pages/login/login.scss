@@ -1,0 +1,42 @@
+page-login {
+
+  background-color: rgba(0,0,0,0.5);
+
+  .modal-content {
+    position: absolute;
+    overflow: hidden;
+    max-width: 280px;
+    border-radius: 8px;
+    width: 280px;
+    height: 165px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 0;
+    box-shadow: 0 16px 20px rgba(0,0,0,.4);
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+  }
+
+  .box-t {
+    border-radius: 40px;
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .font-s {
+    font-size: 24px !important;
+  }
+
+  .red {
+    background-color: red;
+  }
+
+  .green {
+    background-color: green;
+  }
+
+
+}

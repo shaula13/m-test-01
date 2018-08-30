@@ -1,0 +1,13 @@
+
+<ion-card class="modal-content">
+
+    <form #form="ngForm" (ngSubmit)="checkPassword()" novalidate>
+      <ion-label color="primary" stacked class="font-s">Login</ion-label>
+      <ion-item class="box-t">
+        <ion-input type="password" placeholder="Password Input" [(ngModel)]="password" name="password" required clearInput></ion-input>
+      </ion-item>
+      <button ion-button class="red" (click)="closeModal()">Annulla</button>
+      <button ion-button type="submit" class="green">Entra</button>
+    </form>
+
+</ion-card>

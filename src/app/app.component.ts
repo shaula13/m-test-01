@@ -5,12 +5,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { ScreenOrientation } from "@ionic-native/screen-orientation";
 
 import { HomePage } from '../pages/home/home';
-import { GameListPage } from '../pages/games/game-list/game-list';
-import { RestaurantListPage } from '../pages/restaurants/restaurant-list/restaurant-list';
-import { GalleryPage } from '../pages/gallery/gallery';
 import { ItineraryListPage } from '../pages/itineraries/itinerary-list/itinerary-list';
+import { RestaurantListPage } from '../pages/restaurants/restaurant-list/restaurant-list';
+import { GameListPage } from '../pages/games/game-list/game-list';
+import { GalleryPage } from '../pages/gallery/gallery';
+import { SpecialDayPage } from '../pages/special/special-day/special-day';
 import { InfoPage } from '../pages/info/info';
-import { LoginPage } from '../pages/special/login/login';
 
 @Component({
   templateUrl: 'app.html'
@@ -34,7 +34,7 @@ export class MyApp {
       { title: 'Localii&Specialità', icon: 'restaurant', component: RestaurantListPage },
       { title: 'Giochi', icon: 'game-controller-b', component: GameListPage },
       { title: 'Galleria', icon: 'images', component: GalleryPage },
-      { title: (this.key ? 'sorpresa' : '????????'), icon: (this.key ? 'unlock' : 'lock'), component: LoginPage },
+      { title: (this.key ? 'sorpresa' : '????????'), icon: (this.key ? 'unlock' : 'lock'), component: SpecialDayPage },
       { title: 'Info', icon: 'information-circle', component: InfoPage }
     ];
 
