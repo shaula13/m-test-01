@@ -20,19 +20,19 @@
       Bar
     </ion-item-divider>
     <ion-item-group *ngFor="let rest of bars">
-      <ion-item (click)="navigate(rest.id)" class="line">{{ rest.name }}</ion-item>
+      <ion-item (click)="navigate(rest.id)" class="line">{{ rest.name }}<ion-icon name="arrow-dropright" item-right></ion-icon></ion-item>
     </ion-item-group>
     <ion-item-divider color="light" class="title-list">
       Locali
     </ion-item-divider>
     <ion-item-group *ngFor="let rest of locals">
-      <ion-item (click)="navigate(rest.id)" class="line">{{ rest.name }}</ion-item>
+      <ion-item (click)="navigate(rest.id)" class="line">{{ rest.name }}<ion-icon name="arrow-dropright" item-right></ion-icon></ion-item>
     </ion-item-group>
     <ion-item-divider color="light" class="title-list">
       Ristoranti
     </ion-item-divider>
     <ion-item-group *ngFor="let rest of nigths">
-      <ion-item (click)="navigate(rest.id)" class="line">{{ rest.name }}</ion-item>
+      <ion-item (click)="navigate(rest.id)" class="line">{{ rest.name }}<ion-icon name="arrow-dropright" item-right></ion-icon></ion-item>
     </ion-item-group>
   </ion-item-group>
 
@@ -47,19 +47,19 @@
       Primi
     </ion-item-divider>
     <ion-item-group *ngFor="let rest of firsts">
-      <ion-item (click)="navigate(rest.id)" class="line">{{ rest.name }}</ion-item>
+      <ion-item (click)="navigate(rest.id)" class="line">{{ rest.name }}<ion-icon name="arrow-dropright" item-right></ion-icon></ion-item>
     </ion-item-group>
     <ion-item-divider color="light" class="title-list">
       Secondi
     </ion-item-divider>
     <ion-item-group *ngFor="let rest of seconds">
-      <ion-item (click)="navigate(rest.id)" class="line">{{ rest.name }}</ion-item>
+      <ion-item (click)="navigate(rest.id)" class="line">{{ rest.name }}<ion-icon name="arrow-dropright" item-right></ion-icon></ion-item>
     </ion-item-group>
     <ion-item-divider color="light" class="title-list">
       Dolci
     </ion-item-divider>
     <ion-item-group *ngFor="let rest of desserts">
-      <ion-item (click)="navigate(rest.id)" class="line">{{ rest.name }}</ion-item>
+      <ion-item (click)="navigate(rest.id)" class="line">{{ rest.name }}<ion-icon name="arrow-dropright" item-right></ion-icon></ion-item>
     </ion-item-group>
   </ion-item-group>
 

@@ -14,6 +14,7 @@ export class SpecialDayPage extends BaseComponent {
 
   steps = [];
   showNewStep = false;
+  images: Array<{url: any}>;
 
   constructor(protected navCtrl: NavController, protected navParams: NavParams, protected databaseprovider: DatabaseProvider,
               protected loadCtrl: LoadingController, public sanitizer: DomSanitizer, private modalCtrl: ModalController, public events: Events) {
@@ -23,6 +24,13 @@ export class SpecialDayPage extends BaseComponent {
     if(this.steps.length < 8) {
       this.showNewStep = true;
     }
+
+    this.images = [
+      {url: 's-d1.jpg'},
+      {url: 's-d2.jpg'},
+      {url: 's-d3.jpg'}
+    ];
+
   }
 
   onInit() {}

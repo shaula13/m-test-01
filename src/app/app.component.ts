@@ -68,7 +68,6 @@ export class MyApp extends BaseComponent{
       // Here you can do any higher level native things you might need.
       this.statusBar.hide();
       this.splashScreen.hide();
-      console.log('init');
       this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.PORTRAIT_PRIMARY);
     });
   }
