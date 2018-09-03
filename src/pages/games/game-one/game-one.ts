@@ -1,5 +1,5 @@
 import {Component} from '@angular/core';
-import {Events, LoadingController, ModalController, NavController, NavParams} from 'ionic-angular';
+import {Events, LoadingController, ModalController, NavController, NavParams, ToastController} from 'ionic-angular';
 import {DatabaseProvider} from "../../../providers/database/database";
 import {BaseComponent} from "../../BaseComponent";
 import {ModalGamePage} from "../modal-game/modal-game";
@@ -33,7 +33,7 @@ export class GameOnePage extends BaseComponent {
   games = [];
 
   constructor(protected navCtrl: NavController, protected navParams: NavParams, protected databaseprovider: DatabaseProvider,
-              protected loadCtrl: LoadingController, public events: Events, private modalCtrl: ModalController) {
+              protected loadCtrl: LoadingController, public events: Events, private modalCtrl: ModalController, public toastCtrl: ToastController) {
     super(navCtrl, navParams, databaseprovider, loadCtrl);
   }
 
@@ -127,6 +127,31 @@ export class GameOnePage extends BaseComponent {
     }
   }
 
+  getRewards() {
+    switch (this.answersTrue) {
+      case 3:
+        this.databaseprovider.updateImage(0, 4);
+        this.presentToast();
+        break;
+      case 6:
+        this.databaseprovider.updateImage(0, 5);
+        this.presentToast();
+        break;
+      case 9:
+        this.databaseprovider.updateImage(0, 6);
+        this.presentToast();
+        break;
+    }
+  }
+
+  presentToast() {
+    const toast = this.toastCtrl.create({
+      message: 'Disponibile nuova immagine',
+      duration: 1000
+    });
+    toast.present();
+  }
+
   async updateRecord() {
     let record = this.games[0].record;
     if (record < this.answersTrue) {
@@ -136,12 +161,18 @@ export class GameOnePage extends BaseComponent {
 
   async gameOne(answ, row) {
 
+    let record = this.games[0].record;
+
     if (answ != this.answTrue) {
       await this.checkRow('red', row);
       this.life = this.life - 1;
     } else {
       await this.checkRow('green', row);
       this.answersTrue = this.answersTrue + 1;
+
+      if (record < this.answersTrue) {
+        this.getRewards();
+      }
     }
 
     let timeout = setTimeout( () => {

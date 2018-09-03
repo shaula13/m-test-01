@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Events, LoadingController, ModalController, NavController, NavParams} from 'ionic-angular';
+import {Events, LoadingController, ModalController, NavController, NavParams, ToastController} from 'ionic-angular';
 import {DatabaseProvider} from "../../../providers/database/database";
 import {BaseComponent} from "../../BaseComponent";
 import {ModalGamePage} from "../modal-game/modal-game";
@@ -25,7 +25,7 @@ export class GameTwoPage extends BaseComponent {
   games = [];
 
   constructor(protected navCtrl: NavController, protected navParams: NavParams, protected databaseprovider: DatabaseProvider,
-              protected loadCtrl: LoadingController, public events: Events, private modalCtrl: ModalController) {
+              protected loadCtrl: LoadingController, public events: Events, private modalCtrl: ModalController, public toastCtrl: ToastController) {
     super(navCtrl, navParams, databaseprovider, loadCtrl);
   }
 
@@ -82,14 +82,40 @@ export class GameTwoPage extends BaseComponent {
     }
   }
 
+  getRewards() {
+    switch (this.answersTrue) {
+      case 3:
+        this.databaseprovider.updateImage(0, 7);
+        this.presentToast();
+        break;
+      case 6:
+        this.databaseprovider.updateImage(0, 8);
+        this.presentToast();
+        break;
+      case 9:
+        this.databaseprovider.updateImage(0, 9);
+        this.presentToast();
+        break;
+    }
+  }
+
+  presentToast() {
+    const toast = this.toastCtrl.create({
+      message: 'Disponibile nuova immagine',
+      duration: 1000
+    });
+    toast.present();
+  }
+
   async updateRecord() {
-    let record = this.games[0].record;
+    let record = this.games[1].record;
     if (record < this.answersTrue) {
       this.databaseprovider.updateRecord(this.answersTrue, 2);
     }
   }
 
   async gameTwo(answ, row) {
+    let record = this.games[1].record;
 
     if (answ != this.answTrue) {
       await this.checkRow('red', row);
@@ -97,6 +123,10 @@ export class GameTwoPage extends BaseComponent {
     } else {
       await this.checkRow('green', row);
       this.answersTrue = this.answersTrue + 1;
+
+      if (record < this.answersTrue) {
+        this.getRewards();
+      }
     }
 
     let timeout = setTimeout( () => {

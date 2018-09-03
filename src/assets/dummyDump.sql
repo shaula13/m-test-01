@@ -5,12 +5,12 @@ CREATE TABLE IF NOT EXISTS image(
     locked INTEGER
 );
 INSERT INTO image(url ,locked) VALUES
-('photo1.jpg', '0'), ('photo2.jpg', '1'), ('photo3.jpg', '1'), ('photo1.jpg', '1'),
-('photo2.jpg', '0'), ('photo3.jpg', '1'), ('photo1.jpg', '1'), ('photo2.jpg', '1'),
-('photo3.jpg', '0'), ('photo1.jpg', '0'), ('photo2.jpg', '0'), ('photo3.jpg', '0'),
-('photo1.jpg', '0'), ('photo2.jpg', '1'), ('photo3.jpg', '1'), ('photo1.jpg', '1'),
-('photo2.jpg', '0'), ('photo3.jpg', '1'), ('photo1.jpg', '1'), ('photo2.jpg', '1'),
-('photo3.jpg', '0'), ('photo1.jpg', '0'), ('photo2.jpg', '0'), ('photo3.jpg', '0');
+('photo1.jpg', '0'), ('photo2.jpg', '0'), ('photo3.jpg', '0'), ('photo1.jpg', '1'),
+('photo2.jpg', '1'), ('photo3.jpg', '1'), ('photo1.jpg', '1'), ('photo2.jpg', '1'),
+('photo3.jpg', '1'), ('photo1.jpg', '1'), ('photo2.jpg', '1'), ('photo3.jpg', '1'),
+('photo1.jpg', '1'), ('photo2.jpg', '1'), ('photo3.jpg', '1'), ('photo1.jpg', '1'),
+('photo2.jpg', '1'), ('photo3.jpg', '1'), ('photo1.jpg', '1'), ('photo2.jpg', '1'),
+('photo3.jpg', '1'), ('photo1.jpg', '1'), ('photo2.jpg', '1'), ('photo3.jpg', '1');
 
 
 CREATE TABLE IF NOT EXISTS restaurant(

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LoadingController, NavController, NavParams, ViewController} from 'ionic-angular';
+import { LoadingController, NavController, NavParams } from 'ionic-angular';
 import {DomSanitizer} from "@angular/platform-browser";
 import {DatabaseProvider} from "../../../providers/database/database";
 import {BaseComponent} from "../../BaseComponent";
