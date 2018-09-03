@@ -32,5 +32,4 @@ export abstract class BaseComponent implements OnInit {
     loader.present();
   }
 
-
 }

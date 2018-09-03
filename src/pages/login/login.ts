@@ -11,7 +11,6 @@ import {BaseComponent} from "../BaseComponent";
 export class LoginPage extends BaseComponent {
 
   password: string;
-  verifyPassword: false;
 
   constructor(protected navCtrl: NavController, protected navParams: NavParams, protected databaseprovider: DatabaseProvider,
               protected loadCtrl: LoadingController, public sanitizer: DomSanitizer, private view: ViewController, public events: Events) {
@@ -44,14 +43,20 @@ export class LoginPage extends BaseComponent {
       case '101010':
         await this.loadAllSteps();
         this.publishEvent();
+        this.reload();
+        this.spinnerShow(2000);
         break;
       case '010101':
         await this.resetSteps();
         this.publishEvent();
+        this.reload();
+        this.spinnerShow(2000);
         break;
       case '101011':
         await this.updateStep(1);
         this.publishEvent();
+        this.reload();
+        this.spinnerShow(2000);
         break;
       case '101012':
         await this.updateStep(2);
@@ -96,5 +101,10 @@ export class LoginPage extends BaseComponent {
 
   closeModal() {
     this.view.dismiss();
+  }
+
+  reload(){
+    //this.splashscreen.show();
+    window.location.reload();
   }
 }
