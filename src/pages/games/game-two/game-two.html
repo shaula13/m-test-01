@@ -21,7 +21,7 @@
       <ion-item class="cenT redI" [ngClass]="isTrue2 == 1 ? 'green' : (isTrue2 == 2 ? 'red' : '')" (click)="gameTwo('false', 2)"> <ion-icon name="close-circle"></ion-icon></ion-item>
     </ion-item-group>
 
-    <ion-row class="bar col-12" *ngIf="life && answersTrue > -1">
+    <ion-row class="bar col-12" *ngIf="answersTrue > -1">
       <ion-item-group class="center">
         <ion-icon name="{{ (life >= 1 ? 'star' : 'star-outline') }}" item-start></ion-icon>
         <ion-icon name="{{ (life >= 2 ? 'star' : 'star-outline') }}" item-start></ion-icon>

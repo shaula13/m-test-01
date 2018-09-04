@@ -38,8 +38,8 @@ export class MyApp extends BaseComponent{
     // used for an example of ngFor and navigation
     this.pages = [
       { title: 'Home', icon: 'home', component: HomePage, visible: true },
-      { title: 'Itinerari&Luoghi', icon: 'map', component: ItineraryListPage, visible: true },
-      { title: 'Localii&Specialità', icon: 'restaurant', component: RestaurantListPage, visible: true },
+      { title: 'Itinerari & Luoghi', icon: 'map', component: ItineraryListPage, visible: true },
+      { title: 'Locali & Specialità', icon: 'restaurant', component: RestaurantListPage, visible: true },
       { title: 'Giochi', icon: 'game-controller-b', component: GameListPage, visible: true },
       { title: 'Galleria', icon: 'images', component: GalleryPage, visible: true },
       { title: 'Sorpresa', icon: 'unlock', component: SpecialDayPage, visible: false },

@@ -29,7 +29,7 @@
       </button>
     </ion-list>
 
-    <ion-buttons *ngIf="showNewStep" class="title-list btn-mg">
+    <ion-buttons *ngIf="steps.length < 9" class="title-list btn-mg">
       <button ion-button (click)="goToNewStep()">Prossimo Step</button>
     </ion-buttons>
 

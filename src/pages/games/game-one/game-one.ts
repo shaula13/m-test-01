@@ -158,6 +158,9 @@ export class GameOnePage extends BaseComponent {
       this.databaseprovider.updateRecord(this.answersTrue, 1);
     }
   }
+  async updateLastPlay() {
+      this.databaseprovider.updateLastPlay(this.answersTrue, 1);
+  }
 
   async gameOne(answ, row) {
 
@@ -187,6 +190,7 @@ export class GameOnePage extends BaseComponent {
         this.getAnswer2();
       } else {
         this.updateRecord();
+        this.updateLastPlay();
         this.publishEvent();
       }
       this.index++;

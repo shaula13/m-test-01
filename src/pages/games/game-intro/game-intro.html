@@ -31,6 +31,15 @@
     </ion-card-content>
   </ion-card>
 
+  <ion-card *ngIf="game">
+    <ion-card-header class="centerT">
+      Punteggio ultima partita
+    </ion-card-header>
+    <ion-card-content class="center">
+      {{ game.lastPlay}} su {{ game.tot }}
+    </ion-card-content>
+  </ion-card>
+
   <button ion-button block (click)="navigate()">Inizia partita</button>
 
 </ion-content>

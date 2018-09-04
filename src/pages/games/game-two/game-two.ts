@@ -114,6 +114,10 @@ export class GameTwoPage extends BaseComponent {
     }
   }
 
+  async updateLastPlay() {
+    this.databaseprovider.updateLastPlay(this.answersTrue, 2);
+  }
+
   async gameTwo(answ, row) {
     let record = this.games[1].record;
 
@@ -137,6 +141,7 @@ export class GameTwoPage extends BaseComponent {
         this.item = this.listGTC[0];
       } else {
         this.updateRecord();
+        this.updateLastPlay();
         this.publishEvent();
       }
       this.index++;

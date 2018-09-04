@@ -72,3 +72,51 @@
   }
 }
 
+.fontTL {
+  font-family: 'Allura',cursive;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.fontM {
+  font-family: 'Allura', cursive;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.fontT {
+  font-family: 'Indie Flower', cursive;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.toolbar-title-md {
+  font-family: 'Allura', cursive;
+  padding: 0 12px;
+  font-size: 4rem;
+  font-weight: 500;
+  color: #424242;
+}
+
+/* allura-regular - latin */
+@font-face {
+  font-family: 'Allura';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Allura Regular'), local('Allura-Regular'),
+  url('../assets/fonts/allura-v6-latin/allura-v6-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../assets/fonts/allura-v6-latin/allura-v6-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* indie-flower-regular - latin */
+@font-face {
+  font-family: 'Indie Flower';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Indie Flower'), local('IndieFlower'),
+  url('../assets/fonts/indie-flower-v9-latin/indie-flower-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('../assets/fonts/indie-flower-v9-latin/indie-flower-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+

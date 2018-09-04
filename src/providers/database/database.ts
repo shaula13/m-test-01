@@ -230,6 +230,16 @@ export class DatabaseProvider {
     });
   }
 
+  updateLastPlay(lastPlay, id) {
+    let data = [lastPlay, id];
+    return this.database.executeSql("UPDATE game SET lastPlay=? where id=?", data).then(data => {
+      return data;
+    }, err => {
+      console.log('Error: ', err);
+      return err;
+    });
+  }
+
   getRecordForId(id) {
     let data = [id];
     return this.database.executeSql("SELECT record FROM game WHERE id=?", data).then((data) => {

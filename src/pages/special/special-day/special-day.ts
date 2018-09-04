@@ -13,7 +13,6 @@ import {LoginPage} from "../../login/login";
 export class SpecialDayPage extends BaseComponent {
 
   steps = [];
-  showNewStep = false;
   images: Array<{url: any}>;
 
   constructor(protected navCtrl: NavController, protected navParams: NavParams, protected databaseprovider: DatabaseProvider,
@@ -21,9 +20,6 @@ export class SpecialDayPage extends BaseComponent {
     super(navCtrl, navParams, databaseprovider, loadCtrl);
 
     this.listenEvents();
-    if(this.steps.length < 8) {
-      this.showNewStep = true;
-    }
 
     this.images = [
       {url: 's-d1.jpg'},
@@ -47,9 +43,6 @@ export class SpecialDayPage extends BaseComponent {
   listenEvents(){
     this.events.subscribe('reloadStepList',() => {
       this.loadData();
-      if(this.steps.length < 8) {
-        this.showNewStep = true;
-      }
     });
   }
 

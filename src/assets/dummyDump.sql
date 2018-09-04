@@ -144,13 +144,14 @@ CREATE TABLE IF NOT EXISTS game(
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT,
     description TEXT,
+    lastPlay INTEGER,
     record INTEGER,
     tot INTEGER
 );
-INSERT INTO game(title, description, record, tot) VALUES
-('title1', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1 1', '0', '100'),
-('title2', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1 2', '0', '100'),
-('title3', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1 3', '0', '100');
+INSERT INTO game(title, description, lastPlay, record, tot) VALUES
+('title1', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1 1', '0', '0', '100'),
+('title2', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1 2', '0', '0', '100'),
+('title3', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1 3', '0', '0', '100');
 
 
 CREATE TABLE IF NOT EXISTS special_day(
