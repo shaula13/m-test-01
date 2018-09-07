@@ -27,6 +27,7 @@ export abstract class BaseComponent implements OnInit {
     let loader = this.loadCtrl.create({
       spinner: "bubbles",
       content: "Caricamento",
+      cssClass: 'fontT',
       duration: time
     });
     loader.present();

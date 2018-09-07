@@ -9,12 +9,12 @@
 </ion-header>
 
 
-<ion-content class="sfondo1">
+<ion-content class="sfondo1 fontT">
 
   <ion-item-group *ngIf="item && listGT && listGTC.length > 0">
     <img src="../../../assets/imgs/games/{{ item.url }}" class="img"/>
 
-    <p class="titleQ">{{ item.quest }}</p>
+    <p class="titleQ fontTL">{{ item.quest }}</p>
 
     <ion-item-group class="fix">
       <ion-item class="cenT greenI" [ngClass]="isTrue1 == 1 ? 'green' : (isTrue1 == 2 ? 'red' : '')" (click)="gameTwo('true', 1)"><ion-icon name="checkmark-circle-outline"></ion-icon></ion-item>

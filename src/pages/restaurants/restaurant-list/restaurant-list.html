@@ -3,36 +3,36 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Locali&Specialità</ion-title>
+    <ion-title>Locali & Specialità</ion-title>
   </ion-navbar>
 </ion-header>
 
 
-<ion-content class="sfondo1">
+<ion-content class="sfondo1 fontT">
 
-  <ion-item-group *ngIf="isLocal && bars && locals && nigths && imagesRestaurant.length>0">
+  <ion-item-group *ngIf="isLocal && bars && locals && nigths && imagesRestaurant.length>0" class="title-list">
     <ion-slides autoplay="5000" loop="true" speed="500" pager="true">
       <ion-slide *ngFor="let img of imagesRestaurant">
         <img src="../../../assets/imgs/{{ img.url }}">
       </ion-slide>
     </ion-slides>
-    <ion-item-divider color="light" class="title-list">
+    <ion-item-divider color="light" class="title-list  fontTL">
       Bar
     </ion-item-divider>
     <ion-item-group *ngFor="let rest of bars">
-      <ion-item (click)="navigate(rest.id)" class="line">{{ rest.name }}<ion-icon name="arrow-dropright" item-right></ion-icon></ion-item>
+      <ion-item (click)="navigate(rest.id)" class="line fontT">{{ rest.name }}<ion-icon name="arrow-dropright" item-right></ion-icon></ion-item>
     </ion-item-group>
-    <ion-item-divider color="light" class="title-list">
+    <ion-item-divider color="light" class="title-list  fontTL">
       Locali
     </ion-item-divider>
     <ion-item-group *ngFor="let rest of locals">
-      <ion-item (click)="navigate(rest.id)" class="line">{{ rest.name }}<ion-icon name="arrow-dropright" item-right></ion-icon></ion-item>
+      <ion-item (click)="navigate(rest.id)" class="line fontT">{{ rest.name }}<ion-icon name="arrow-dropright" item-right></ion-icon></ion-item>
     </ion-item-group>
-    <ion-item-divider color="light" class="title-list">
+    <ion-item-divider color="light" class="title-list  fontTL">
       Ristoranti
     </ion-item-divider>
     <ion-item-group *ngFor="let rest of nigths">
-      <ion-item (click)="navigate(rest.id)" class="line">{{ rest.name }}<ion-icon name="arrow-dropright" item-right></ion-icon></ion-item>
+      <ion-item (click)="navigate(rest.id)" class="line fontT">{{ rest.name }}<ion-icon name="arrow-dropright" item-right></ion-icon></ion-item>
     </ion-item-group>
   </ion-item-group>
 
@@ -43,31 +43,33 @@
         <img src="../../../assets/imgs/{{ img.url }}">
       </ion-slide>
     </ion-slides>
-    <ion-item-divider color="light" class="title-list">
+    <ion-item-divider color="light" class="title-list fontTL">
       Primi
     </ion-item-divider>
     <ion-item-group *ngFor="let rest of firsts">
-      <ion-item (click)="navigate(rest.id)" class="line">{{ rest.name }}<ion-icon name="arrow-dropright" item-right></ion-icon></ion-item>
+      <ion-item (click)="navigate(rest.id)" class="line fontT">{{ rest.name }}<ion-icon name="arrow-dropright" item-right></ion-icon></ion-item>
     </ion-item-group>
-    <ion-item-divider color="light" class="title-list">
+    <ion-item-divider color="light" class="title-list fontTL">
       Secondi
     </ion-item-divider>
     <ion-item-group *ngFor="let rest of seconds">
-      <ion-item (click)="navigate(rest.id)" class="line">{{ rest.name }}<ion-icon name="arrow-dropright" item-right></ion-icon></ion-item>
+      <ion-item (click)="navigate(rest.id)" class="line fontT">{{ rest.name }}<ion-icon name="arrow-dropright" item-right></ion-icon></ion-item>
     </ion-item-group>
-    <ion-item-divider color="light" class="title-list">
+    <ion-item-divider color="light" class="title-list fontTL">
       Dolci
     </ion-item-divider>
     <ion-item-group *ngFor="let rest of desserts">
-      <ion-item (click)="navigate(rest.id)" class="line">{{ rest.name }}<ion-icon name="arrow-dropright" item-right></ion-icon></ion-item>
+      <ion-item (click)="navigate(rest.id)" class="line fontT">{{ rest.name }}<ion-icon name="arrow-dropright" item-right></ion-icon></ion-item>
     </ion-item-group>
   </ion-item-group>
 
   <ion-item class="tabb" [ngClass]="isLocal ? 'selected' : ''" (click)="isLocalOnClick()">
-    <ion-icon name="restaurant" class="tab-margin"> Locali</ion-icon>
+    <ion-icon name="restaurant" class="p2"><span class="fontT2"> Locali</span></ion-icon>
+
   </ion-item>
   <ion-item class="tabb" [ngClass]="isFood ? 'selected' : ''" (click)="isFoodOnClick()">
-    <ion-icon name="pizza" class="tab-icon"> Specialità</ion-icon>
+   <ion-icon name="pizza" class="p2"><span class="fontT2"> Specialità</span></ion-icon>
+   <!-- <a href="#food" class="w-100"><ion-icon name="pizza" class="p2"><span class="fontT2"> Specialità</span></ion-icon></a>-->
   </ion-item>
 
 </ion-content>

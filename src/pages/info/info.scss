@@ -1,29 +1,34 @@
 page-info {
 
   .size {
-    margin: 30px auto;
+    margin: 8px auto;
     width: 55%;
   }
 
-  .mg-b4 {
-    margin-bottom: 40px;
+  .mg-b3 {
+    margin-bottom: 15px;
   }
 
   .mg-b {
     margin-bottom: 16px;
-    box-shadow: 4px 8px 6px rgb(78, 77, 77);
+    box-shadow: 4px 6px 6px rgb(78, 77, 77);
+    border: solid 0.5px rgba(167, 166, 166, 0.6);
+  }
+  .mg-b2 {
+    box-shadow: 4px 6px 6px rgb(78, 77, 77);
     border: solid 0.5px rgba(167, 166, 166, 0.6);
   }
 
   .t-right {
     float: right;
     margin-right: 20px;
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .t-left {
     margin-left: 20px;
-    font-size: 16px;
+    font-size: 26px;
+    font-family: 'Allura',cursive;
   }
 
 }

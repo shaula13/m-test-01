@@ -8,18 +8,18 @@
 </ion-header>
 
 
-<ion-content class="sfondo1">
+<ion-content class="sfondo1 fontT">
 
   <ion-item-group *ngIf="item && listGO && listGOC.length > 0">
     <img src="../../../assets/imgs/games/{{ item.url }}" class="img"/>
 
-    <p class="titleQ">{{ item.quest }}</p>
+    <p class="titleQ fontTL">{{ item.quest }}</p>
 
     <ion-item-group class="fix" *ngIf="answers && answers.length > 0">
-      <ion-item class="cenT" [ngClass]="isTrue1 == 1 ? 'green' : (isTrue1 == 2 ? 'red' : '')" (click)="gameOne(aw1, 1)">{{ aw1 }}</ion-item>
-      <ion-item class="cenT" [ngClass]="isTrue2 == 1 ? 'green' : (isTrue2 == 2 ? 'red' : '')" (click)="gameOne(aw2, 2)">{{ aw2 }}</ion-item>
-      <ion-item class="cenT" [ngClass]="isTrue3 == 1 ? 'green' : (isTrue3 == 2 ? 'red' : '')" (click)="gameOne(aw3, 3)">{{ aw3 }}</ion-item>
-      <ion-item class="cenT" [ngClass]="isTrue4 == 1 ? 'green' : (isTrue4 == 2 ? 'red' : '')" (click)="gameOne(aw4, 4)">{{ aw4 }}</ion-item>
+      <ion-item class="cenT fontT" [ngClass]="isTrue1 == 1 ? 'green' : (isTrue1 == 2 ? 'red' : '')" (click)="gameOne(aw1, 1)">{{ aw1 }}</ion-item>
+      <ion-item class="cenT  fontT" [ngClass]="isTrue2 == 1 ? 'green' : (isTrue2 == 2 ? 'red' : '')" (click)="gameOne(aw2, 2)">{{ aw2 }}</ion-item>
+      <ion-item class="cenT  fontT" [ngClass]="isTrue3 == 1 ? 'green' : (isTrue3 == 2 ? 'red' : '')" (click)="gameOne(aw3, 3)">{{ aw3 }}</ion-item>
+      <ion-item class="cenT  fontT" [ngClass]="isTrue4 == 1 ? 'green' : (isTrue4 == 2 ? 'red' : '')" (click)="gameOne(aw4, 4)">{{ aw4 }}</ion-item>
     </ion-item-group>
 
     <ion-row class="bar col-12" *ngIf="answers && answers.length > 0 && answersTrue > -1">

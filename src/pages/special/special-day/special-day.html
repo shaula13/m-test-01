@@ -8,7 +8,7 @@
 </ion-header>
 
 
-<ion-content class="sfondo1">
+<ion-content class="sfondo1 fontT">
 
   <ion-item-group *ngIf="images.length > 0 && steps && steps.length>0">
 
@@ -18,18 +18,18 @@
       </ion-slide>
     </ion-slides>
 
-    <ion-item-divider color="light" class="title-list">
+    <ion-item-divider color="light" class="title-list fontTL">
       Step Lista
     </ion-item-divider>
 
     <ion-list>
-      <button ion-item  *ngFor="let step of steps" (click)="navigate(step.id)">
+      <button ion-item  class="fontT" *ngFor="let step of steps" (click)="navigate(step.id)">
         {{ step.title }}
         <ion-icon name="arrow-dropright" item-right></ion-icon>
       </button>
     </ion-list>
 
-    <ion-buttons *ngIf="steps.length < 9" class="title-list btn-mg">
+    <ion-buttons *ngIf="steps.length < 9" class="title-list btn-mg fontT">
       <button ion-button (click)="goToNewStep()">Prossimo Step</button>
     </ion-buttons>
 

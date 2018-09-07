@@ -8,34 +8,32 @@
 </ion-header>
 
 
-<ion-content class="sfondo1">
+<ion-content class="sfondo1 fontT">
 
   <ion-card *ngIf="game">
-    <ion-card-header class="centerT">
+    <ion-card-header class="fontTL">
       Gioco
     </ion-card-header>
-    <ion-card-content>
+    <ion-card-content class="fontT">
       {{ game.description }}
     </ion-card-content>
-    <ion-card-content>
+    <ion-card-content class="fontT">
       The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
     </ion-card-content>
   </ion-card>
 
   <ion-card *ngIf="game">
-    <ion-card-header class="centerT">
+    <ion-card-header class="fontTL">
       Record
     </ion-card-header>
-    <ion-card-content class="center">
+    <ion-card-content class="fontT center">
       {{ game.record}} su {{ game.tot }}
     </ion-card-content>
-  </ion-card>
 
-  <ion-card *ngIf="game">
-    <ion-card-header class="centerT">
+    <ion-card-header class="fontTL">
       Punteggio ultima partita
     </ion-card-header>
-    <ion-card-content class="center">
+    <ion-card-content class="fontT center">
       {{ game.lastPlay}} su {{ game.tot }}
     </ion-card-content>
   </ion-card>

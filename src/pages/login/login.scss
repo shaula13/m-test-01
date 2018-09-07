@@ -5,10 +5,9 @@ page-login {
   .modal-content {
     position: absolute;
     overflow: hidden;
-    max-width: 280px;
     border-radius: 8px;
     width: 280px;
-    height: 165px;
+    height: 190px;
     top: 0;
     bottom: 0;
     left: 0;
@@ -27,7 +26,8 @@ page-login {
   }
 
   .font-s {
-    font-size: 24px !important;
+    font-size: 38px !important;
+    font-family: 'Allura',cursive;
   }
 
   .red {

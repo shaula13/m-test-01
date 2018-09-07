@@ -1,30 +1,35 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>{{  place.name  }}</ion-title>
+    <ion-title>Luoghi</ion-title>
   </ion-navbar>
 </ion-header>
 
 
-<ion-content padding class="sfondo1">
+<ion-content padding class="sfondo1 fontT">
 
   <ion-card>
 
-    <ion-item>
-      <h2>{{ place.name }}</h2>
-      <p>{{ place.category }}</p>
-    </ion-item>
-
     <img src="../../../assets/imgs/{{ place.url }}">
 
+    <ion-item>
+      <h1 class="fontTL">{{ place.name }}</h1>
+    </ion-item>
+
     <ion-card-content>
-      <p>{{ place.description }}</p>
+      <p class="fontT">{{ place.description }}</p>
     </ion-card-content>
 
     <ion-row>
       <ion-col>
-        <button ion-button icon-start clear small (click)="load($event, place.www)">
+        <button class="f-16" ion-button icon-start  small (click)="load($event, place.www)">
           <ion-icon name="tablet-portrait"></ion-icon>
           <div>Sito</div>
+        </button>
+      </ion-col>
+      <ion-col>
+        <button class="f-16 b-right" ion-button  item-end (click)="load($event, place.www)">
+          <ion-icon name="pin"></ion-icon>
+          Start
         </button>
       </ion-col>
     </ion-row>

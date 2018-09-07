@@ -7,7 +7,7 @@ page-general-itinerary {
     .tl {
         min-height: 50px;
         text-align: center;
-        
+
     }
 
     .tabb {
@@ -20,8 +20,8 @@ page-general-itinerary {
         color: white;
         width: 50%;
         z-index: 999;
-       
-        &:nth-of-type(2) {    
+
+        &:nth-of-type(2) {
             left: 50%;
         }
 
@@ -29,14 +29,14 @@ page-general-itinerary {
             border-bottom: none;
         }
     }
-    
+
     .selected {
         background-color:  #5f5e5e;
     }
-    
+
     .title-list {
         text-align: center;
-    }    
+    }
 
     .scroll-content {
         margin-top: 56px;
@@ -49,14 +49,32 @@ page-general-itinerary {
             border-bottom: 1px solid #dedede;
         }
     }
-    
+
 
     .parag {
         padding: 13px 16px;
-        font-size: 1.4rem;
-        line-height: 1.5;
+        font-size: 1.9rem;
+      line-height: 2rem;
     }
 
+    .t-left {
+      text-align: center;
+    }
 
+    .f-14{
+      font-size: 14px;
+    }
+
+    .f-20 {
+      font-size: 20px;
+    }
+
+  .icon.icon-md.item-icon {
+    color: #488aff;
+  }
+
+  .b-right {
+    float: right;
+  }
 
 }

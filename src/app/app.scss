@@ -74,8 +74,9 @@
 
 .fontTL {
   font-family: 'Allura',cursive;
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 700;
+  text-align: center;
 }
 
 .fontM {
@@ -86,8 +87,9 @@
 
 .fontT {
   font-family: 'Indie Flower', cursive;
-  font-size: 16px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: justify;
 }
 
 .toolbar-title-md {
@@ -116,6 +118,14 @@
   src: local('Indie Flower'), local('IndieFlower'),
   url('../assets/fonts/indie-flower-v9-latin/indie-flower-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
   url('../assets/fonts/indie-flower-v9-latin/indie-flower-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+.ml-1 {
+  margin-left: 10px;
+}
+
+.t.left {
+  float: left;
 }
 
 

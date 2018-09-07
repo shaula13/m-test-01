@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {Events, LoadingController, NavController, NavParams, ViewController} from 'ionic-angular';
+import {Events, LoadingController, NavController, NavParams, ToastController, ViewController} from 'ionic-angular';
 import {DomSanitizer} from "@angular/platform-browser";
 import {DatabaseProvider} from "../../providers/database/database";
 import {BaseComponent} from "../BaseComponent";
@@ -13,7 +13,8 @@ export class LoginPage extends BaseComponent {
   password: string;
 
   constructor(protected navCtrl: NavController, protected navParams: NavParams, protected databaseprovider: DatabaseProvider,
-              protected loadCtrl: LoadingController, public sanitizer: DomSanitizer, private view: ViewController, public events: Events) {
+              protected loadCtrl: LoadingController, public sanitizer: DomSanitizer, private view: ViewController, public events: Events,
+              public toastCtrl: ToastController) {
     super(navCtrl, navParams, databaseprovider, loadCtrl);
   }
 
@@ -53,6 +54,7 @@ export class LoginPage extends BaseComponent {
         this.spinnerShow(2000);
         break;
       case '101011':
+        this.presentToast();
         await this.updateStep(1);
         this.publishEvent();
         this.reload();
@@ -93,6 +95,14 @@ export class LoginPage extends BaseComponent {
 
 
     }
+  }
+
+  presentToast() {
+    const toast = this.toastCtrl.create({
+      message: 'Disponibile nuova pagina',
+      duration: 1500
+    });
+    toast.present();
   }
 
   viewP() {

@@ -3,13 +3,13 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Itinerari&Luoghi</ion-title>
+    <ion-title>Itinerari & Luoghi</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content class="sfondo1">
+<ion-content class="sfondo1 fontT">
 
-  <ion-item-group *ngIf="isItinerary && itineraries && itineraries.length > 0">
+  <ion-item-group padding *ngIf="isItinerary && itineraries && itineraries.length > 0">
 
     <page-general-itinerary *ngFor="let itin of itineraries" [id]="itin.id"></page-general-itinerary>
 
@@ -21,19 +21,19 @@
         <img src="../../../assets/imgs/{{ img.url }}">
       </ion-slide>
     </ion-slides>
-    <ion-item-divider color="light" class="title-list">
+    <ion-item-divider color="light" class="title-list fontTL">
       Luoghi
     </ion-item-divider>
     <ion-item-group *ngFor="let rest of places">
-      <ion-item (click)="navigate(rest.id)" class="line">{{ rest.name }}<ion-icon name="arrow-dropright" item-right></ion-icon></ion-item>
+      <ion-item (click)="navigate(rest.id)" class="line fontT">{{ rest.name }}<ion-icon name="arrow-dropright" item-right></ion-icon></ion-item>
     </ion-item-group>
   </ion-item-group>
 
   <ion-item class="tabb" [ngClass]="isItinerary ? 'selected' : ''" (click)="isItineraryOnClick()">
-    <ion-icon name="map" class="tab-margin"> Itinerari</ion-icon>
+    <ion-icon name="map" class="p2"><span class="fontT2"> Itinerari</span></ion-icon>
   </ion-item>
   <ion-item class="tabb" [ngClass]="isPlace ? 'selected' : ''" (click)="isPlaceOnClick()">
-    <ion-icon name="pin" class="tab-icon"> Luoghi</ion-icon>
+    <ion-icon name="pin" class="p2"><span class="fontT2"> Luoghi</span></ion-icon>
   </ion-item>
 
 </ion-content>

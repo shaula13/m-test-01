@@ -1,4 +1,4 @@
-<ion-card class="mg-b" *ngIf="itinerary && placesIt && placesIt.length > 0">
+<ion-card class="mg-b fontT" *ngIf="itinerary && placesIt && placesIt.length > 0">
 
   <iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(itinerary.url)" width="100%" height="300px" frameborder="0" style="border:0"
     allowfullscreen></iframe>
@@ -7,18 +7,20 @@
     <p class="parag">{{ itinerary.description }}</p>
     <ion-item-group *ngFor="let resti of placesIt">
       <ion-item (click)="navigate(resti.id)">
-        <ion-icon name="wine" item-start large></ion-icon>
-        <h2>{{ resti.name }}</h2>
+        <ion-icon name="pin" item-start large></ion-icon>
+        <h1 class="t-left">{{ resti.name }}</h1>
       </ion-item>
     </ion-item-group>
   </ion-item-group>
 
-  <ion-item>
+  <ion-item class="f-20">
     <span item-start>{{ itinerary.time }}</span>
     <span item-start>({{ itinerary.distance }})</span>
-    <button ion-button icon-start clear item-end (click)="load($event, itinerary.www)">
+    <ion-col>
+    <button class="f-14 b-right" ion-button icon-start item-end (click)="load($event, itinerary.www)">
       <ion-icon name="navigate"></ion-icon>
       Start
     </button>
+    </ion-col>
   </ion-item>
 </ion-card>

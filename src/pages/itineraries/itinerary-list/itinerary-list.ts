@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { LoadingController, NavController, NavParams } from 'ionic-angular';
+import {Component, ViewChild} from '@angular/core';
+import {Content, LoadingController, NavController, NavParams} from 'ionic-angular';
 import { PlaceModalPage } from '../place-modal/place-modal';
 import { DatabaseProvider } from '../../../providers/database/database';
 import { DomSanitizer } from '../../../../node_modules/@angular/platform-browser';
@@ -10,6 +10,7 @@ import { BaseComponent } from "../../BaseComponent";
   templateUrl: 'itinerary-list.html',
 })
 export class ItineraryListPage  extends  BaseComponent{
+  @ViewChild(Content) content: Content;
 
   itineraries = [];
   places = [];
@@ -49,11 +50,15 @@ export class ItineraryListPage  extends  BaseComponent{
   isItineraryOnClick() {
     this.isItinerary = true;
     this.isPlace = false;
+
+    this.content.scrollToTop(0);
   }
 
   isPlaceOnClick() {
     this.isPlace = true;
     this.isItinerary = false;
+
+    this.content.scrollToTop(0);
   }
 
 }

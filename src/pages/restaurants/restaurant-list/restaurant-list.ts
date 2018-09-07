@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { LoadingController, NavController, NavParams } from 'ionic-angular';
+import {Component, ViewChild} from '@angular/core';
+import { LoadingController, NavController, NavParams, Content } from 'ionic-angular';
 import { RestaurantModalPage } from '../restaurant-modal/restaurant-modal';
 import { DatabaseProvider } from '../../../providers/database/database';
 import { BaseComponent } from "../../BaseComponent";
@@ -9,6 +9,7 @@ import { BaseComponent } from "../../BaseComponent";
   templateUrl: 'restaurant-list.html',
 })
 export class RestaurantListPage extends BaseComponent {
+  @ViewChild(Content) content: Content;
 
   restaurant = {};
   //restaurants = [];
@@ -78,11 +79,15 @@ export class RestaurantListPage extends BaseComponent {
   isLocalOnClick() {
     this.isLocal = true;
     this.isFood = false;
+
+    this.content.scrollToTop(0);
   }
 
   isFoodOnClick() {
     this.isFood = true;
     this.isLocal = false;
+
+    this.content.scrollToTop(0);
   }
 
 }

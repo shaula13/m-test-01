@@ -8,7 +8,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content class="sfondo1">
+<ion-content padding class="sfondo1 fontT">
 
   <ion-card class="mg-b" *ngIf="step">
 
@@ -16,15 +16,17 @@
             allowfullscreen></iframe>
 
     <ion-card-content>
-      <p class="parag">{{ step.description }}</p>
+      <p class="parag fontT">{{ step.description }}</p>
     </ion-card-content>
 
-    <ion-item>
-      <button ion-button icon-start clear item-end (click)="load($event, step.www)">
-        <ion-icon name="navigate"></ion-icon>
-        Start
-      </button>
-    </ion-item>
+    <ion-row>
+      <ion-col>
+        <button ion-button icon-start class="f-16 b-right" item-end (click)="load($event, step.www)">
+          <ion-icon name="navigate"></ion-icon>
+          Start
+        </button>
+      </ion-col>
+    </ion-row>
   </ion-card>
 
 </ion-content>
