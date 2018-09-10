@@ -1,0 +1,47 @@
+//Game one	-->	Quiz
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Quale di queste non è una gemma dell'infinito?', 
+'Del destino', 
+'Dell'anima, 
+'Dello spazio', 
+'Del potere', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Qual è il nome intero di Pepper?', 
+'Virginia Potts',
+'Virgie Potts', 
+'Pepper Potts', 
+'Pepper Pot', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Quale gemma dell'infinito è contenuta nello scettro di Loki?', 
+'Della mente', 
+'Della giustizia', 
+'Dell'inganno', 
+'Del potere', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
+'answ', 
+'answ1', 
+'answ2', 
+'answ3', 
+'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'
+),
+
+

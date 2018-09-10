@@ -17,7 +17,7 @@
     <p class="titleQ fontTL">{{ item.quest }}</p>
 
     <ion-item-group class="fix">
-      <ion-item class="cenT greenI" [ngClass]="isTrue1 == 1 ? 'green' : (isTrue1 == 2 ? 'red' : '')" (click)="gameTwo('true', 1)"><ion-icon name="checkmark-circle-outline"></ion-icon></ion-item>
+      <ion-item-divider class="cenT greenI" [ngClass]="isTrue1 == 1 ? 'green' : (isTrue1 == 2 ? 'red' : '')" (click)="gameTwo('true', 1)"><ion-icon name="checkmark-circle-outline"></ion-icon></ion-item-divider>
       <ion-item class="cenT redI" [ngClass]="isTrue2 == 1 ? 'green' : (isTrue2 == 2 ? 'red' : '')" (click)="gameTwo('false', 2)"> <ion-icon name="close-circle"></ion-icon></ion-item>
     </ion-item-group>
 

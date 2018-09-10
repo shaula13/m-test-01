@@ -19,6 +19,7 @@ export class RestaurantListPage extends BaseComponent {
   bars = [];
   locals = [];
   nigths = [];
+  starters = [];
   firsts = [];
   seconds = [];
   desserts = [];
@@ -39,6 +40,7 @@ export class RestaurantListPage extends BaseComponent {
     await this.loadRestaurantsForCategoryData('Bar').then(data => this.bars = data);
     await this.loadRestaurantsForCategoryData('Locali').then(data => this.locals = data);
     await this.loadRestaurantsForCategoryData('Ristoranti').then(data => this.nigths = data);
+    await this.loadFoodsForCategoryData('Antipasto').then(data => this.starters = data);
     await this.loadFoodsForCategoryData('Primo').then(data => this.firsts = data);
     await this.loadFoodsForCategoryData('Secondo').then(data => this.seconds = data);
     await this.loadFoodsForCategoryData('Dolce').then(data => this.desserts = data);
