@@ -36,6 +36,29 @@
 (
 'game-one/g_o1.jpg', 
 'game-one/g_o1.jpg', 
+'In cosa è specializzata Jane Foster?', 
+'Astrofisica', 
+'Astrologia', 
+'Fisica', 
+'Ingegneria spaziale', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Con quale frase la Vedova Nera riesce a calmare Hulk?', 
+'"Il sole sta calando"', 
+'"Il sole sta sorgendo"', 
+'"Il sole sta tramontando"', 
+'"Il sole sta arrivando"', 
+''
+),
+
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
 'answ', 
 'answ1', 
@@ -43,5 +66,42 @@
 'answ3', 
 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'
 ),
+
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
+'answ', 
+'answ1', 
+'answ2', 
+'answ3', 
+'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'
+),
+
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
+'answ', 
+'answ1', 
+'answ2', 
+'answ3', 
+'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'
+),
+
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
+'answ', 
+'answ1', 
+'answ2', 
+'answ3', 
+'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'
+),
+
 
 
