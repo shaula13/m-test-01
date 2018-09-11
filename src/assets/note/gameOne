@@ -461,6 +461,397 @@
 (
 'game-one/g_o1.jpg', 
 'game-one/g_o1.jpg', 
+'Chi porta questo ciondolo con una freccia intorno al collo?', 
+'Natasha Romanoff', 
+'Maria Hill', 
+'Pepper Potts', 
+'answ3', 
+'La freccia suggerisce un legame in comune tra Black Widow e Hawkeye.'
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Chi interpreta il direttore della S.H.I.E.L.D. Nick Fury?', 
+'Samuel L. Jackson', 
+'Robert Downey Jr.', 
+'Mark Ruffalo', 
+'Thom Hiddleston', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'L'indistruttibile scudo di Captain America è fatto di...?', 
+'Vibranio', 
+'Adamantio', 
+'Argento', 
+'', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Gli indistruttibili artigli di Wolverine è fatto di...?', 
+'Adamantio', 
+'Vibranio', 
+'Argento', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
+'answ', 
+'answ1', 
+'answ2', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Il villain del primo film sui Vendicatori è interpretato da Tom Hiddleston: ricordi il suo nome?', 
+'Loki', 
+'Thanos', 
+'Venom', 
+'Teschio Rosso', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'L’attore Jeremy Renner, nei panni di Occhio di Falco, per il film ha dovuto imparare a...?', 
+'Tirare con l'arco, 
+'Cavalcare', 
+'Guidare un elicottero', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Scarlett Johansson interpreta Vedova Nera. In quale film era già comparsa, prima degli Avengers?', 
+'Iron Man II', 
+'Spider Man - HomeComing', 
+'Capt America - The Winter Soldier', 
+'Iron Man III', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Chi fra i seguenti supereroi compare per la prima volta in Avengers: Infinity War?', 
+'Black Panther', 
+'Thor', 
+'Hulk', 
+'Iron Man', 
+''
+),
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Cosa cerca Barbossa in La maledizione della prima luna?', 
+'Un medaglione', 
+'Jack Sparrow', 
+'Un forziere', 
+'Will Turner', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Cosa contiene il forziere di Davy Jones in La maledizione del forziere fantasma?', 
+'Il suo cuore', 
+'La sua anima', 
+'Dobloni', 
+'Una mappa', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Come si chiama la nave di Davy Jones?', 
+'L'Olandese Volante', 
+'Interceptor', 
+'Queen Anne's Revenge', 
+'HMS Dauntless', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Come si chiama la nave che viene requisita nella Maledizione della prima luna?', 
+'Interceptor', 
+'L'Olandese Volante', 
+'Queen Anne's Revenge', 
+'HMS Dauntless', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Chi è in realtà Tia Dalma?', 
+'Calypso', 
+'Afrodite', 
+'Una sirena', 
+'La Dea del Mare', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'A chi ha dichiarato di essersi ispirato Johnny Depp nella creazione di Jack Sparrow?', 
+'Keith Richards', 
+'Mick Jagger', 
+'Jimi Hendrix', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Come si chiama questo personaggio?', 
+'Sao Feng', 
+'Lo Pan', 
+'Lao Chang', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'A cosa fu ispirata inizialmente la saga di Pirati dei Caraibi?', 
+'Una giostra', 
+'Un fumetto', 
+'Una serie di romanzi', 
+'Un gioco', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Come si chiama il luogo in cui si incontra il consiglio dei Nove Pirati Nobili in Ai confini del mare?', 
+'Baia dei Reilitti', 
+'Isla de Muerta', 
+'Isla Cruces', 
+'Tortuga', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Come si chiama la nave che viene requisita nella Maledizione della prima luna?', 
+'Queen Anne's Revenge', 
+'L'Olandese Volante', 
+'Interceptor', 
+'HMS Dauntless', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Qual è il vero nome del pirata Barbanera?', 
+'Edward Teach', 
+'Weatherby Swann', 
+'Bill Turner', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Quale, tra queste cose, è necessaria per usufruire della fonte della giovinezza in Oltre i confini del mare?', 
+'Una lacrima di sirena', 
+'Un'ala di pipistrello', 
+'Un occhio di salamandra', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Quanti sono i Pirati Nobili?', 
+'9', 
+'7', 
+'4', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Chi è il Capitano della Perla Nera nel primo film?', 
+'Barbossa', 
+'Barbanera', 
+'Davy Jons', 
+'Jack Sparrow', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Chi interpreta il padre di Jack Sparrow nel terzo film della saga?', 
+'Keith Richards', 
+'Paul McCartney', 
+'Frank Zappa', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Di chi era originariamente il tesoro maledetto de La Maledizione della Prima Luna?', 
+'Herman Cotes', 
+'Francisco Pizarro', 
+'Francisco Varquez de Coronado', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Pirati dei Caraibi Oltre i Confini del Mare è l'adattamento di un libro, quale?', 
+'Mari Stregati', 
+'L'Isola del Corsaro Verde', 
+'Monkey Island', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Come dice di essere scappato Jack Sparrow dall'isolotto deserto dove lo ha lasciato Barbossa prima dell'inizio del primo film?', 
+'Tartarughe marine', 
+'Sirene', 
+'Pellicani', 
+'Con una zattera', 
+''
+),
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Harry Potter è nato il...?', 
+'31 luglio 1980', 
+'31 luglio 2004', 
+'31 dicembre 1988', 
+'31 maggio 2004', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Chi regala Edvige ad Harry?', 
+'Rubeus Hagrid', 
+'Draco Malfoy', 
+'Horace Lumacorno', 
+'Ginny Weasley', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Sirius Black è stato ucciso da?', 
+'Sua cugina', 
+'Sua sorella', 
+'Sua sorellastra', 
+'Sua cognata', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Di che razza è il cane del Patronus di Ron?', 
+'Jack Russel Terrier', 
+'Bracco di Weimar', 
+'Beagle', 
+'Pointer Inglese', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
+'answ', 
+'answ1', 
+'answ2', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
+'answ', 
+'answ1', 
+'answ2', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
+'answ', 
+'answ1', 
+'answ2', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
+'answ', 
+'answ1', 
+'answ2', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
 'answ', 
 'answ1', 
