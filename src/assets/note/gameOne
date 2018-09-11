@@ -93,8 +93,8 @@
 'game-one/g_o1.jpg', 
 'game-one/g_o1.jpg', 
 'In quale film del MCU viene distrutto lo S.H.I.E.L.D.?', 
-'Captain America - Wintier Solder', 
-'Captain America - Civil War', 
+'Capt America - Wintier Solder', 
+'Capt America - Civil War', 
 'Iron Man III', 
 'Avengers - Age of Ultron, 
 ''
@@ -126,6 +126,342 @@
 'game-one/g_o1.jpg', 
 'game-one/g_o1.jpg', 
 'Chi non fa parte della squadra originale dei Vendicatori?', 
+'War Machine', 
+'Vedova Nera', 
+'Captain America', 
+'Thor', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Come si chiama l'armatura di Iron Man per contrastare la forza di Hulk?', 
+'Veronica', 
+'Virginia', 
+'Vanessa', 
+'Mark XIII', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Qual è l'antagonista principale di Spiderman in SpiderMan - Homecoming?', 
+'L'Avvoltoio', 
+'Rhino', 
+'Green Goblin', 
+'Electro', 
+''
+),
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'In che anno è nata la figura dell'Uomo Ragno?', 
+'1962', 
+'1972', 
+'1982', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Qual è il vero nome di Wolverine?', 
+'James Howlett', 
+'John Hewlett', 
+'Jonathan Howletts', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Chi viene considerato il primo vero supereroe?', 
+'Capitan America', 
+'L'uomo Ragno', 
+'Superman', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'In quale fumetto appare per la prima volta Wolverine?', 
+'answ', 
+'Thor', 
+'Hulk', 
+'Spiderman', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'In quale Paese il futuro Iron Man rimane ferito con la famosa scheggia nel petto?', 
+'Afghanistan', 
+'Vietnam', 
+'Cina', 
+'Iran', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Come si chiama il martello di Thor?', 
+'Mjolnir', 
+'Molnjr', 
+'Melnir', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Come si chiamano i Fantastici 4?', 
+'Reed, Susan, Ben, Johnny', 
+'Red, Sue, Bill, John', 
+'Richard, Sarah, Bart, Jim', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Nel primo gruppo formato dal Professor X erano presenti:', 
+'Ciclope e Jean Grey', 
+'Tempesta e Colosso', 
+'Thunderbird e Wolverine', 
+'answ3', 
+''
+),
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Chi, insieme a Stan Lee, creò, agli albori della Marvel, la maggior parte dei personaggi?', 
+'Jack Kirby', 
+'Frank Miller', 
+'John Romita Jr.', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Quale attore ha interpretato Bruce Banner nel primo film di Hulk?', 
+'Eric Bana', 
+'Edward Norton', 
+'Mark Ruffalo', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Nelle acque di quale isola si svolge la battaglia finale in X-Men - L’inizio?', 
+'Tenerife', 
+'Cuba', 
+'Thaiti', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'In che anno Peter Quill viene rapito dalla Terra e portato nello spazio?', 
+'1988', 
+'1970', 
+'1992', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Come si chiamano gli amici di Ant-Man?', 
+'Luis, Dave e Kurt', 
+'Luis, Jhon e Igor', 
+'Luis, Mike a Anton', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'In quanti film degli X-Men appare Wolverine?', 
+'8', 
+'5', 
+'3', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Chi sono i mutanti che lavorano per Magneto quando decide di rapire Rogue?', 
+'Mistica, Sabertooth e Rospo', 
+'Mistica, Azazel e Sabertooth', 
+'Mistica, Azazel e Wolwerine', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Quale tra i fedeli compagni di Thor lo lascia all’inizio di Thor: The Dark World?', 
+'Hogun', 
+'Volstagg', 
+'Fandral', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Qual è il vero nome di Spider-Man?', 
+'Peter Parker', 
+'Bruce Wayne', 
+'Clark Kent', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Dove vive Batman?', 
+'Gotham City', 
+'New York', 
+'Dimmsdale', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Quale Tartaruga Ninja ha la bandana blu?', 
+'Leonardo', 
+'Raffaello', 
+'Donatello', 
+'Michelangelo', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Quale supereroe ha un'amica di nome Gwen Stacy?', 
+'Spider-Man', 
+'Batman', 
+'Superman', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Qual è il cibo preferito dalle Tartarughe Ninja?', 
+'Pizza', 
+'Bacon', 
+'Hamburger', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'In quale film Marvel è presente per la prima volta Adam Warlock?', 
+'Thor - The Dark World', 
+'The Avengers', 
+'Guardiani della Galassia', 
+'answ3', 
+'Il personaggio appare in un bozzolo nel seguito di Thor'
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Il Guanto dell'Infinito fa un'apparizione furtiva in quale film Marvel?', 
+'Thor', 
+'Iron Man III', 
+'Capt America - The First Avenger', 
+'answ3', 
+'Eccolo che brilla nella stanza dei trofei di Odino.'
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Questo è un cameo di Howard the Duck in Guardiani della Galassia - ma quale altro personaggio Marvel fa un'apparizione fugace nel film?', 
+'Cosmo the Dog', 
+'Super Rabbit', 
+'Toughy Tomcat', 
+'answ3', 
+'Ecco Cosmo the dog in posa con il regista di Guardiani della Galassia, James Gunn.'
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'In quale film Marvel Stan Lee è scambiato per Hugh Hefner?', 
+'Iron Man', 
+'L'Incredibile Hulk, 
+'Capt America', 
+'answ3', 
+'Stan the Man interpreta il creatore di Playboy nel film Iron Man del 2008.'
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Captain America: Il Primo Vendicatore presenta uno sguardo veloce su di uno storico personaggio Marvel. Quale?', 
+'Torcia Umana', 
+'Namor', 
+'Spitfire', 
+'answ3', 
+'La versione androide originale di Torcia Umana è esposta in Captian America: il primo vendicatore.'
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Quale film di Iron Man fa un riferimento diretto alla serie di cartoni animati anni '60?', 
+'Iron Man', 
+'Iron Man II', 
+'Iron Man III', 
+'answ3', 
+'Una versione jazz di questo brano può essere ascoltato durante la scena del casinò del primo Iron Man.'
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
 'answ', 
 'answ1', 
 'answ2', 
@@ -141,9 +477,8 @@
 'answ1', 
 'answ2', 
 'answ3', 
-'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'
+''
 ),
-
 
 (
 'game-one/g_o1.jpg', 
@@ -153,9 +488,8 @@
 'answ1', 
 'answ2', 
 'answ3', 
-'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'
+''
 ),
-
 
 (
 'game-one/g_o1.jpg', 
@@ -165,9 +499,8 @@
 'answ1', 
 'answ2', 
 'answ3', 
-'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'
+''
 ),
-
 
 (
 'game-one/g_o1.jpg', 
@@ -177,9 +510,8 @@
 'answ1', 
 'answ2', 
 'answ3', 
-'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'
+''
 ),
-
 
 (
 'game-one/g_o1.jpg', 
@@ -189,9 +521,8 @@
 'answ1', 
 'answ2', 
 'answ3', 
-'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'
+''
 ),
-
 
 (
 'game-one/g_o1.jpg', 
@@ -201,9 +532,8 @@
 'answ1', 
 'answ2', 
 'answ3', 
-'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'
+''
 ),
-
 
 (
 'game-one/g_o1.jpg', 
@@ -213,9 +543,8 @@
 'answ1', 
 'answ2', 
 'answ3', 
-'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'
+''
 ),
-
 
 (
 'game-one/g_o1.jpg', 
@@ -225,38 +554,8 @@
 'answ1', 
 'answ2', 
 'answ3', 
-'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'
+''
 ),
-
-
-(
-'game-one/g_o1.jpg', 
-'game-one/g_o1.jpg', 
-'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
-'answ', 
-'answ1', 
-'answ2', 
-'answ3', 
-'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'
-),
-
-
-(
-'game-one/g_o1.jpg', 
-'game-one/g_o1.jpg', 
-'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
-'answ', 
-'answ1', 
-'answ2', 
-'answ3', 
-'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'
-),
-
-
-
-
-
-
 
 
 
@@ -270,10 +569,7 @@
 'answ1', 
 'answ2', 
 'answ3', 
-'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1'
+''
 ),
-
-
-
 
 
