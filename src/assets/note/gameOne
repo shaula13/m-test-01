@@ -798,7 +798,7 @@
 'game-one/g_o1.jpg', 
 'game-one/g_o1.jpg', 
 'Di che razza è il cane del Patronus di Ron?', 
-'Jack Russel Terrier', 
+'Jack Russell Terrier', 
 'Bracco di Weimar', 
 'Beagle', 
 'Pointer Inglese', 
@@ -808,11 +808,22 @@
 (
 'game-one/g_o1.jpg', 
 'game-one/g_o1.jpg', 
-'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
-'answ', 
-'answ1', 
-'answ2', 
-'answ3', 
+'La sede dell'Ordine della Fenice è...?', 
+'Grimmauld Place, 12', 
+'Privet Drive, 4', 
+'Grimmauld Drive, 12', 
+'Grimmauld Place, 4', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Di che legno è composta la bacchetta di Fleur Delacour?', 
+'Rosa', 
+'Biancispino', 
+'Agrifoglio', 
+'Sambuco', 
 ''
 ),
 
@@ -830,11 +841,22 @@
 (
 'game-one/g_o1.jpg', 
 'game-one/g_o1.jpg', 
-'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
-'answ', 
-'answ1', 
-'answ2', 
+'Qual è l’altro nome usato per il deluminatore?', 
+'Spegnino', 
+'Non c'è altro nome, 
+'Cattura luce', 
 'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Quale di questi non è un Horcrux di Voldemort?', 
+'Diadema di Tosca Tassorosso', 
+'Anello di Orvolosum Gaunt', 
+'Medaglione di Serpeverde', 
+'Nagini', 
 ''
 ),
 
@@ -852,88 +874,66 @@
 (
 'game-one/g_o1.jpg', 
 'game-one/g_o1.jpg', 
-'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
-'answ', 
-'answ1', 
-'answ2', 
-'answ3', 
+'Chi accompagnò Fleur Delacour al Ballo del Ceppo?', 
+'Roger Davies', 
+'Dennis Creevy', 
+'Owen Cauldwell', 
+'David Reaps', 
 ''
 ),
 
 (
 'game-one/g_o1.jpg', 
 'game-one/g_o1.jpg', 
-'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
-'answ', 
-'answ1', 
-'answ2', 
-'answ3', 
+'Qual era il nome del villaggio dove risiedevano i Riddle?', 
+'Little Hangleton', 
+'Little Hallow', 
+'Little Hollow', 
+'Little Hanglot', 
 ''
 ),
 
 (
 'game-one/g_o1.jpg', 
 'game-one/g_o1.jpg', 
-'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
-'answ', 
-'answ1', 
-'answ2', 
-'answ3', 
+'Completa la frase: “La Camera dei Segreti è stata aperta. Temete nemici...”', 
+'Dell'erede, 
+'Del Maestro', 
+'Dell'Oscuro, 
+'Del Prescelto', 
 ''
 ),
 
 (
 'game-one/g_o1.jpg', 
 'game-one/g_o1.jpg', 
-'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
-'answ', 
-'answ1', 
-'answ2', 
-'answ3', 
+' Nel primo film, Harry incontra Draco Malfoy a Hogwarts, ma nel libro il loro primo incontro accade...?', 
+'Da Madame Malkin', 
+'Nella Banca Gringott, 
+'Da Elyot', 
+'Sul treno per Hogwarts', 
+'Madame Malkin, Abiti per tutte le taglie'
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Quale dei seguenti personaggi non fu un preside di Hogwarts?', 
+'Elphias Doge', 
+'Severus Piton', 
+'Phineas Nigellus Black', 
+'Phyllida Spore', 
 ''
 ),
 
 (
 'game-one/g_o1.jpg', 
 'game-one/g_o1.jpg', 
-'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
-'answ', 
-'answ1', 
-'answ2', 
-'answ3', 
-''
-),
-
-(
-'game-one/g_o1.jpg', 
-'game-one/g_o1.jpg', 
-'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
-'answ', 
-'answ1', 
-'answ2', 
-'answ3', 
-''
-),
-
-(
-'game-one/g_o1.jpg', 
-'game-one/g_o1.jpg', 
-'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
-'answ', 
-'answ1', 
-'answ2', 
-'answ3', 
-''
-),
-
-(
-'game-one/g_o1.jpg', 
-'game-one/g_o1.jpg', 
-'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
-'answ', 
-'answ1', 
-'answ2', 
-'answ3', 
+' Quale dei seguenti è uno dei Doni della Morte?', 
+'Pietra della ressurrezione', 
+'Bacchetta di salice', 
+'Bacchetta di prugno', 
+'Pietra della reincarnazione', 
 ''
 ),
 
