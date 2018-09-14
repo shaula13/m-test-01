@@ -830,10 +830,10 @@
 (
 'game-one/g_o1.jpg', 
 'game-one/g_o1.jpg', 
-'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
-'answ', 
-'answ1', 
-'answ2', 
+'In quale libro Hermione usa la collana giratempo?', 
+'Il prigioniero di Azkaban', 
+'La pietra filosofale', 
+'L'Ordine della Fenice', 
 'answ3', 
 ''
 ),
@@ -863,10 +863,10 @@
 (
 'game-one/g_o1.jpg', 
 'game-one/g_o1.jpg', 
-'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
-'answ', 
-'answ1', 
-'answ2', 
+'Nel libro "Harry Potter e il Principe Mezzosangue" qual è l’incantesimo usato da Harry contro Draco nel bagno di Mirtilla Malcontenta?', 
+'Sectumsempra', 
+'Serpensortia', 
+'Salvio Hexia', 
 'answ3', 
 ''
 ),
@@ -940,6 +940,83 @@
 (
 'game-one/g_o1.jpg', 
 'game-one/g_o1.jpg', 
+'Dove viene fondato L’Esercito di Silente?', 
+'Al Pub Testa di Porco', 
+'Nella Stanza delle Necessita', 
+'Ai Tre Manici di Scopa', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Quale di questi maghi è stato il primo a riuscire ad evadere dalla prigione di Azkaban?', 
+'Bartemius Crouch Jr.', 
+'Sitius Black', 
+'Avery Junior', 
+'Bellatrix Lestrange', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Qual è il numero che Harry porta sulla maglietta di Quidditch?', 
+'7', 
+'12', 
+'5', 
+'15', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Quanti Animagus si trovano nei romanzi di Harry Potter?', 
+'5', 
+'7', 
+'4', 
+'6', 
+'Rita Skeeter, Peter Pettigrew, Sirius Black, James Potter e Minerva McGrannit'
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'La prima volta che Harry ha visto Dobby in camera sua, i Dursley avevano ospiti a cena?', 
+'I signori Mason', 
+'I signori Jones', 
+'I signori Harrison', 
+'I signori Ford', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Cosa lasciò Silente a Hermione nel suo testamento?', 
+'Le fiabe di Beda il Bardo', 
+'La collana giratempo', 
+'Il deluminatore', 
+'La spada di Grifondoro', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'Chi è l’unico vero padrone della morte?', 
+'Harry Potter', 
+'Voldemort', 
+'Albus Silente', 
+'Severus Piton', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
 'answ', 
 'answ1', 
@@ -948,6 +1025,137 @@
 ''
 ),
 
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
+'answ', 
+'answ1', 
+'answ2', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
+'answ', 
+'answ1', 
+'answ2', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
+'answ', 
+'answ1', 
+'answ2', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
+'answ', 
+'answ1', 
+'answ2', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
+'answ', 
+'answ1', 
+'answ2', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
+'answ', 
+'answ1', 
+'answ2', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
+'answ', 
+'answ1', 
+'answ2', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
+'answ', 
+'answ1', 
+'answ2', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
+'answ', 
+'answ1', 
+'answ2', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
+'answ', 
+'answ1', 
+'answ2', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
+'answ', 
+'answ1', 
+'answ2', 
+'answ3', 
+''
+),
+
+(
+'game-one/g_o1.jpg', 
+'game-one/g_o1.jpg', 
+'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum??1', 
+'answ', 
+'answ1', 
+'answ2', 
+'answ3', 
+''
+),
 
 
 
