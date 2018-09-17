@@ -61,9 +61,9 @@
 (
 'game-one/g_o1.jpg', 
 'game-one/g_o1.jpg', 
-'In Civil War, Ant-Man si è schierato con il Team Tony?',
-'false', 
-''
+'Nella prima edizione italiana del primo romanzo c’era un errore nella copertina?', 
+'true',
+'Non portava gli occhiali'
 ),
 
 (
