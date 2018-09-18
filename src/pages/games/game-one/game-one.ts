@@ -129,15 +129,27 @@ export class GameOnePage extends BaseComponent {
 
   getRewards() {
     switch (this.answersTrue) {
-      case 3:
+      case 25:
         this.databaseprovider.updateImage(0, 4);
         this.presentToast();
         break;
-      case 6:
+      case 50:
         this.databaseprovider.updateImage(0, 5);
         this.presentToast();
         break;
-      case 9:
+      case 75:
+        this.databaseprovider.updateImage(0, 6);
+        this.presentToast();
+        break;
+      case 100:
+        this.databaseprovider.updateImage(0, 6);
+        this.presentToast();
+        break;
+      case 125:
+        this.databaseprovider.updateImage(0, 6);
+        this.presentToast();
+        break;
+      case 150:
         this.databaseprovider.updateImage(0, 6);
         this.presentToast();
         break;

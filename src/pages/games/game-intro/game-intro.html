@@ -12,18 +12,6 @@
 
   <ion-card *ngIf="game">
     <ion-card-header class="fontTL">
-      Gioco
-    </ion-card-header>
-    <ion-card-content class="fontT">
-      {{ game.description }}
-    </ion-card-content>
-    <ion-card-content class="fontT">
-      The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
-    </ion-card-content>
-  </ion-card>
-
-  <ion-card *ngIf="game">
-    <ion-card-header class="fontTL">
       Record
     </ion-card-header>
     <ion-card-content class="fontT center">
@@ -39,5 +27,17 @@
   </ion-card>
 
   <button ion-button block (click)="navigate()">Inizia partita</button>
+
+  <ion-card *ngIf="game">
+    <ion-card-header class="fontTL">
+      Gioco
+    </ion-card-header>
+    <ion-card-content class="fontT">
+      {{ game.description }}
+    </ion-card-content>
+    <ion-card-content class="fontT">
+      The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+    </ion-card-content>
+  </ion-card>
 
 </ion-content>
