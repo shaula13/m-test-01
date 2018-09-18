@@ -163,7 +163,7 @@ INSERT INTO game_one(url, url2, quest, answ, answ1, answ2, answ3, description) V
 ('game-one/m_cAmerica.jpg', 'game-one/m_cAmerica.jpg', 'L''indistruttibile scudo di Captain America è fatto di...?', 'Vibranio', 'Adamantio', 'Argento', 'Materiale sconosciuto', ''),
 ('game-one/m_wolverine.jpg', 'game-one/m_wolverine.jpg', 'Gli indistruttibili artigli di Wolverine è fatto di...?', 'Adamantio', 'Vibranio', 'Argento', 'Platino', ''),
 ('game-one/m_avengers.jpg', 'game-one/m_loki.jpg', 'Il villain del primo film sui Vendicatori è interpretato da Tom Hiddleston: ricordi il suo nome?', 'Loki', 'Thanos', 'Venom', 'Teschio Rosso', ''),
-('game-one/m_oDFalco.jpg', 'game-one/m_oDFalco.jpg', 'L’attore Jeremy Renner, nei panni di Occhio di Falco, per il film ha dovuto imparare a...?', 'Tirare con l'arco, 'Cavalcare', 'Guidare un elicottero', 'Guidare la moto', ''),
+('game-one/m_oDFalco.jpg', 'game-one/m_oDFalco.jpg', 'L’attore Jeremy Renner, nei panni di Occhio di Falco, per il film ha dovuto imparare a...?', 'Tirare con l''arco', 'Cavalcare', 'Guidare un elicottero', 'Guidare la moto', ''),
 ('game-one/m_vNeraIM.jpg', 'game-one/m_vNeraIM_r.jpg', 'Scarlett Johansson interpreta Vedova Nera. In quale film era già comparsa, prima degli Avengers?', 'Iron Man II', 'Spider Man - HomeComing', 'Capt America - The Winter Soldier', 'Iron Man III', ''),
 ('game-one/m_cWar.jpg', 'game-one/m_bPanter.jpg', 'Chi fra i seguenti supereroi compare per la prima volta in Civil War?', 'Black Panther', 'Thor', 'Hulk', 'Iron man', ''),
 ('game-one/p_barbossa.jpg', 'game-one/p_medaglione.jpg', 'Cosa cerca Barbossa in La maledizione della prima luna?', 'Un medaglione', 'Jack Sparrow', 'Un forziere', 'Will Turner', ''),
@@ -294,7 +294,7 @@ CREATE TABLE IF NOT EXISTS game(
     tot INTEGER
 );
 INSERT INTO game(title, description, lastPlay, record, tot) VALUES
-('Quiz', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1 1', '0', '0', '100'),
+('Quiz', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1 1', '0', '0', '150'),
 ('Vero o falso', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1 2', '0', '0', '100'),
 ('title3', 'lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum lorem ipum1 3', '0', '0', '100');
 
