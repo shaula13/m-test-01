@@ -3,7 +3,7 @@
     <name>10th Anniversary</name>
     <description>An awesome Ionic/Cordova app.</description>
     <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
-    <content original-src="index.html" src="http://10.0.1.78:8100" />
+    <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
@@ -89,4 +89,5 @@
     <allow-navigation href="http://10.0.1.78:8100" sessionid="d9743866" />
     <engine name="browser" spec="5.0.3" />
     <engine name="android" spec="7.0.0" />
+    <plugin name="cordova-plugin-background-mode" spec="^0.7.2" />
 </widget>

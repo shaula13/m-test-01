@@ -1,139 +1,92 @@
-//Game two	-->	True or false
+('game-two/m_antMan.jpg', 'game-two/m_cWar.jpg', 'In Civil War, Ant-Man si è schierato con il Team Tony?', 'false', 'Si è schierato con il Team Cap'),
+('game-two/m_mJackson.jpg', 'game-two/m_mJackson.jpg', 'Michael Jackson negli anni 90 voleva comprare la Marvel per poi produrre una versione di Spiderman personalizzata?','true', ''),
+('game-two/m_thor.jpg', 'game-two/m_tHulk.jpg', 'Stan Lee decise di creare Thor perchè era affascinato dalle mitologie nordiche?','false', 'Aveva paura che nessuno potesse sconfiggere Hulk'),
+('game-two/m_sSurfer.jpg', 'game-two/m_wWoman.jpg', 'Silver Surfer fu in grado di brandire Mjolnir?','false', 'Ci riuscì Wonder Woman'),
+('game-two/m_tony.jpg', 'game-two/m_tony.jpg', 'Per alcuni anni Tony Stark dovette abbandonare il ruolo di Iron Man perchè rimase paralizzato?','true', ''),
+('game-two/m_hulkGray.jpg', 'game-two/m_hulkGray.jpg', 'Il primo colore della pelle di Hulk fu grigio?','true', ''),
+('game-two/m_avengers.jpg', 'game-two/m_avengers.jpg', 'E' vero che ha incassato più il primo film degli Avengers rispetto al secondo?,'True', ''),
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'Nella prima edizione italiana del primo romanzo c’era un errore nella copertina?', 'true', 'Non portava gli occhiali'),
+('game-two/m_ruffalo.jpg', 'game-two/m_ruffalo.jpg', 'Mark Ruffalo ha dovuto abbandonare la premier di Avengers?', 'true', 'perché la figlioletta di 4 anni era terrorizzata dal vedere il suo papà trasformarsi in un mostro'),
+('game-two/m_tony.jpg', 'game-two/m_bPhanter.jpg', 'Tony Stark è il supereroe più ricco di tutti', 'false', 'Pantera Nera è 5 volte più ricco di lui'),
+('game-two/m_asgard.jpg', 'game-two/m_relique.jpg', 'Nel castello di Odino ci vengono mostrati di sfuggita alcuni oggetti, tra cui l'Occhio di Agamotto, 'true', ''),
+('game-two/m_asgard.jpg', 'game-two/m_relique.jpg', 'Nel castello di Odino ci vengono mostrati di sfuggita alcuni oggetti, tra cui  l’Occhio di Adam Warlock', 'true', ''),
+('game-two/m_asgard.jpg', 'game-two/m_relique.jpg', 'Nel castello di Odino ci vengono mostrati di sfuggita alcuni oggetti, tra cui il Tridente di Nettuno', 'false', ''),
+('game-two/m_thorIdentita.jpg', 'game-two/m_thorIdentita.jpg', 'Jane Foster da a Thor i documenti del suo ex, Donald Blake,:nome che usa Thor nei fumetti', 'true', ''),
+('game-two/m_tony.jpg', 'game-two/m_tonyBS.jpg', 'In Avengers  Tony Stark indossa una maglietta dei Metallica', 'false', 'Indossa una maglietta dei Black Sabbath: è un riferimento alla canzone “Iron Man” del gruppo, che però non ha niente a che fare con il nostro supereroe.'),
+('game-two/h_voldemort.jpg', 'game-two/h_voldemort.jpg', 'Quando Voldemort muore, durante la Battaglia di Hogwats, ha 51 anni.', 'false', 'Ha 71 anni. Tome Riddle (vero nome di Voldemort) era nato il 31 dicembre 1926.'),
+('game-two/h_arthur.jpg', 'game-two/h_arthur.jpg', 'Il numero che Arthur Weasley compone nella cabina telefonica compongono la parola: Harry.', 'false', '6-2-4-4-2. Le lettere che si trovano sotto quei numeri compongono una parola: magia.'),
+('game-two/h_quidditch.jpg', 'game-two/h_quidditch.jpg', 'Il Quidditch è lo sport più popolare tra le streghe e i maghi d’America', 'false', 'Il Quidditch è lo sport più popolare tra le streghe e i maghi d’Europa. In America, invece, è il Quodpot lo sport preferito.'),
+
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
 
 
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
 
-(
-'game-one/g_o1.jpg', 
-'game-one/g_o1.jpg', 
-'In Civil War, Ant-Man si è schierato con il Team Tony?',
-'false', 
-'Si è schierato con il Team Cap'
-),
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
 
-(
-'game-one/g_o1.jpg', 
-'game-one/g_o1.jpg', 
-'Michael Jackson negli anni 90 voleva comprare la Marvel per poi produrre una versione di Spiderman personalizzata?',
-'true', 
-''
-),
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
 
-(
-'game-one/g_o1.jpg', 
-'game-one/g_o1.jpg', 
-'Stan Lee decise di creare Thor perchè era affascinato dalle mitologie nordiche?',
-'false', 
-'Aveva paura che nessuno potesse sconfiggere Hulk'
-),
 
-(
-'game-one/g_o1.jpg', 
-'game-one/g_o1.jpg', 
-'Silver Surfer fu in grado di brandire Mjolnir?',
-'false', 
-'Ci riuscì Wonder Woman'
-),
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
 
-(
-'game-one/g_o1.jpg', 
-'game-one/g_o1.jpg', 
-'Per alcuni anni Tony Stark dovette abbandonare il ruolo di Iron Man perchè rimase paralizzato?',
-'true', 
-''
-),
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
 
-(
-'game-one/g_o1.jpg', 
-'game-one/g_o1.jpg', 
-'Il primo colore della pelle di Hulk fu grigio?',
-'true', 
-''
-),
 
-(
-'game-one/g_o1.jpg', 
-'game-one/g_o1.jpg', 
-'E' vero che ha incassato più il primo film degli Avengers rispetto al secondo?,
-'True', 
-''
-),
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
 
-(
-'game-one/g_o1.jpg', 
-'game-one/g_o1.jpg', 
-'Nella prima edizione italiana del primo romanzo c’era un errore nella copertina?', 
-'true',
-'Non portava gli occhiali'
-),
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
 
-(
-'game-one/g_o1.jpg', 
-'game-one/g_o1.jpg', 
-'In Civil War, Ant-Man si è schierato con il Team Tony?',
-'false', 
-''
-),
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
 
-(
-'game-one/g_o1.jpg', 
-'game-one/g_o1.jpg', 
-'In Civil War, Ant-Man si è schierato con il Team Tony?',
-'false', 
-''
-),
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
 
-(
-'game-one/g_o1.jpg', 
-'game-one/g_o1.jpg', 
-'In Civil War, Ant-Man si è schierato con il Team Tony?',
-'false', 
-''
-),
 
-(
-'game-one/g_o1.jpg', 
-'game-one/g_o1.jpg', 
-'In Civil War, Ant-Man si è schierato con il Team Tony?',
-'false', 
-''
-),
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
 
-(
-'game-one/g_o1.jpg', 
-'game-one/g_o1.jpg', 
-'In Civil War, Ant-Man si è schierato con il Team Tony?',
-'false', 
-''
-),
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
 
-(
-'game-one/g_o1.jpg', 
-'game-one/g_o1.jpg', 
-'In Civil War, Ant-Man si è schierato con il Team Tony?',
-'false', 
-''
-),
 
-(
-'game-one/g_o1.jpg', 
-'game-one/g_o1.jpg', 
-'In Civil War, Ant-Man si è schierato con il Team Tony?',
-'false', 
-''
-),
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
 
-(
-'game-one/g_o1.jpg', 
-'game-one/g_o1.jpg', 
-'In Civil War, Ant-Man si è schierato con il Team Tony?',
-'false', 
-''
-),
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
 
-(
-'game-one/g_o1.jpg', 
-'game-one/g_o1.jpg', 
-'In Civil War, Ant-Man si è schierato con il Team Tony?',
-'false', 
-''
-),
+
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
+
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
+
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
+
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
+
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
+
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
+
+
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
+
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
+
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
+
+
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
+
+
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
+
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
+
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
+
+
+('game-two/h_copertina.jpg', 'game-two/h_copertina_r.jpg', 'd', 'true', 'd'),
+

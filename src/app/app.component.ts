@@ -13,6 +13,7 @@ import { SpecialDayPage } from '../pages/special/special-day/special-day';
 import { InfoPage } from '../pages/info/info';
 import {BaseComponent} from "../pages/BaseComponent";
 import {DatabaseProvider} from "../providers/database/database";
+import {BackgroundMode} from "@ionic-native/background-mode";
 
 @Component({
   templateUrl: 'app.html'
@@ -28,7 +29,7 @@ export class MyApp extends BaseComponent{
 
   key: boolean = false;
 
-  constructor(public databaseprovider: DatabaseProvider, public loadCtrl: LoadingController, public platform: Platform,
+  constructor(public backgroundMode: BackgroundMode, public databaseprovider: DatabaseProvider, public loadCtrl: LoadingController, public platform: Platform,
                 public statusBar: StatusBar, public splashScreen: SplashScreen, public screenOrientation: ScreenOrientation, public events: Events) {
 
     super(null, null, databaseprovider, loadCtrl);
@@ -69,6 +70,7 @@ export class MyApp extends BaseComponent{
       this.statusBar.hide();
       this.splashScreen.hide();
       this.screenOrientation.lock(this.screenOrientation.ORIENTATIONS.PORTRAIT_PRIMARY);
+      this.backgroundMode.enable();
     });
   }
 
