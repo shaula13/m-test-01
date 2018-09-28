@@ -24,7 +24,10 @@ export class SpecialDayPage extends BaseComponent {
     this.images = [
       {url: 's-d1.jpg'},
       {url: 's-d2.jpg'},
-      {url: 's-d3.jpg'}
+      {url: 's-d3.jpg'},
+      {url: 's-d4.jpg'},
+      {url: 's-d5.jpg'},
+      {url: 's-d6.jpg'}
     ];
 
   }

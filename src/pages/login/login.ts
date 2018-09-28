@@ -53,46 +53,57 @@ export class LoginPage extends BaseComponent {
         this.reload();
         this.spinnerShow(2000);
         break;
-      case '101011':
+      case '111111':
         this.presentToast();
         await this.updateStep(1);
         this.publishEvent();
         this.reload();
         this.spinnerShow(2000);
         break;
-      case '101012':
+      case 'singapore':
         await this.updateStep(2);
         this.publishEvent();
         break;
-      case '101013':
+      case 'pechino':
         await this.updateStep(3);
         this.publishEvent();
         break;
-      case '101014':
+      case 'oslo':
         await this.updateStep(4);
         this.publishEvent();
         break;
-      case '101015':
+      case 'stoccolma':
         await this.updateStep(5);
         this.publishEvent();
         break;
-      case '101016':
+      case 'amsterdam':
         await this.updateStep(6);
         this.publishEvent();
         break;
-      case '101017':
+      case 'mosca':
         await this.updateStep(7);
         this.publishEvent();
         break;
-      case '101018':
+      case 'ilcairo':
         await this.updateStep(8);
         this.publishEvent();
         break;
-      case '101019':
+      case '----':
         await this.updateStep(9);
         this.publishEvent();
         break;
-
+      case 'ottawa':
+        await this.updateStep(10);
+        this.publishEvent();
+        break;
+      case 'reykjavik':
+        await this.updateStep(11);
+        this.publishEvent();
+        break;
+      case 'atene':
+        await this.updateStep(12);
+        this.publishEvent();
+        break;
 
     }
   }

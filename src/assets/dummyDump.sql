@@ -359,30 +359,92 @@ CREATE TABLE IF NOT EXISTS special_day(
     www TEXT
 );
 INSERT INTO special_day(title , url, urlMap, description, locked, www) VALUES
-('Step 1', 'place/place1.jpg', 'https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1408.8900260266505!2d7.677198708144566!3d45.06997268906614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x47886d6d42be9a1f%3A0x8ea306681d25ab76!2sPiazza+Solferino%2C+10121+Torino+TO!3m2!1d45.0690615!2d7.6768027!4m5!1s0x47886d72386ad075%3A0x4d1acc0b146d0ab1!2sKensho%2C+Via+Mercanti%2C+16%2C+10122+Torino+TO!3m2!1d45.0708801!2d7.6803821999999995!5e0!3m2!1sit!2sit!4v1533717481937',
- 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum', '1',
- 'https://www.google.it/maps/dir/Piazza+Solferino,+10121+Torino+TO/Kensho,+Via+Mercanti,+16,+10122+Torino+TO/@45.0699727,7.6771987,18z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x47886d6d42be9a1f:0x8ea306681d25ab76!2m2!1d7.6768027!2d45.0690615!1m5!1m1!1s0x47886d72386ad075:0x4d1acc0b146d0ab1!2m2!1d7.6803822!2d45.0708801?hl=it'),
-('Step 2', 'place/place2.jpg', 'https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1408.8900260266505!2d7.677198708144566!3d45.06997268906614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x47886d6d42be9a1f%3A0x8ea306681d25ab76!2sPiazza+Solferino%2C+10121+Torino+TO!3m2!1d45.0690615!2d7.6768027!4m5!1s0x47886d72386ad075%3A0x4d1acc0b146d0ab1!2sKensho%2C+Via+Mercanti%2C+16%2C+10122+Torino+TO!3m2!1d45.0708801!2d7.6803821999999995!5e0!3m2!1sit!2sit!4v1533717481937',
- 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum', '1',
- 'https://www.google.it/maps/dir/Piazza+Solferino,+10121+Torino+TO/Kensho,+Via+Mercanti,+16,+10122+Torino+TO/@45.0699727,7.6771987,18z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x47886d6d42be9a1f:0x8ea306681d25ab76!2m2!1d7.6768027!2d45.0690615!1m5!1m1!1s0x47886d72386ad075:0x4d1acc0b146d0ab1!2m2!1d7.6803822!2d45.0708801?hl=it'),
-('Step 3', 'place/place3.jpg', 'https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1408.8900260266505!2d7.677198708144566!3d45.06997268906614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x47886d6d42be9a1f%3A0x8ea306681d25ab76!2sPiazza+Solferino%2C+10121+Torino+TO!3m2!1d45.0690615!2d7.6768027!4m5!1s0x47886d72386ad075%3A0x4d1acc0b146d0ab1!2sKensho%2C+Via+Mercanti%2C+16%2C+10122+Torino+TO!3m2!1d45.0708801!2d7.6803821999999995!5e0!3m2!1sit!2sit!4v1533717481937',
- 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum', '1',
- 'https://www.google.it/maps/dir/Piazza+Solferino,+10121+Torino+TO/Kensho,+Via+Mercanti,+16,+10122+Torino+TO/@45.0699727,7.6771987,18z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x47886d6d42be9a1f:0x8ea306681d25ab76!2m2!1d7.6768027!2d45.0690615!1m5!1m1!1s0x47886d72386ad075:0x4d1acc0b146d0ab1!2m2!1d7.6803822!2d45.0708801?hl=it'),
-('Step 4', 'place/place1.jpg', 'https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1408.8900260266505!2d7.677198708144566!3d45.06997268906614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x47886d6d42be9a1f%3A0x8ea306681d25ab76!2sPiazza+Solferino%2C+10121+Torino+TO!3m2!1d45.0690615!2d7.6768027!4m5!1s0x47886d72386ad075%3A0x4d1acc0b146d0ab1!2sKensho%2C+Via+Mercanti%2C+16%2C+10122+Torino+TO!3m2!1d45.0708801!2d7.6803821999999995!5e0!3m2!1sit!2sit!4v1533717481937',
- 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum', '1',
- 'https://www.google.it/maps/dir/Piazza+Solferino,+10121+Torino+TO/Kensho,+Via+Mercanti,+16,+10122+Torino+TO/@45.0699727,7.6771987,18z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x47886d6d42be9a1f:0x8ea306681d25ab76!2m2!1d7.6768027!2d45.0690615!1m5!1m1!1s0x47886d72386ad075:0x4d1acc0b146d0ab1!2m2!1d7.6803822!2d45.0708801?hl=it'),
-('Step 5', 'place/place2.jpg', 'https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1408.8900260266505!2d7.677198708144566!3d45.06997268906614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x47886d6d42be9a1f%3A0x8ea306681d25ab76!2sPiazza+Solferino%2C+10121+Torino+TO!3m2!1d45.0690615!2d7.6768027!4m5!1s0x47886d72386ad075%3A0x4d1acc0b146d0ab1!2sKensho%2C+Via+Mercanti%2C+16%2C+10122+Torino+TO!3m2!1d45.0708801!2d7.6803821999999995!5e0!3m2!1sit!2sit!4v1533717481937',
- 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum', '1',
- 'https://www.google.it/maps/dir/Piazza+Solferino,+10121+Torino+TO/Kensho,+Via+Mercanti,+16,+10122+Torino+TO/@45.0699727,7.6771987,18z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x47886d6d42be9a1f:0x8ea306681d25ab76!2m2!1d7.6768027!2d45.0690615!1m5!1m1!1s0x47886d72386ad075:0x4d1acc0b146d0ab1!2m2!1d7.6803822!2d45.0708801?hl=it'),
-('Step 6', 'place/place3.jpg', 'https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1408.8900260266505!2d7.677198708144566!3d45.06997268906614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x47886d6d42be9a1f%3A0x8ea306681d25ab76!2sPiazza+Solferino%2C+10121+Torino+TO!3m2!1d45.0690615!2d7.6768027!4m5!1s0x47886d72386ad075%3A0x4d1acc0b146d0ab1!2sKensho%2C+Via+Mercanti%2C+16%2C+10122+Torino+TO!3m2!1d45.0708801!2d7.6803821999999995!5e0!3m2!1sit!2sit!4v1533717481937',
- 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum', '1',
- 'https://www.google.it/maps/dir/Piazza+Solferino,+10121+Torino+TO/Kensho,+Via+Mercanti,+16,+10122+Torino+TO/@45.0699727,7.6771987,18z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x47886d6d42be9a1f:0x8ea306681d25ab76!2m2!1d7.6768027!2d45.0690615!1m5!1m1!1s0x47886d72386ad075:0x4d1acc0b146d0ab1!2m2!1d7.6803822!2d45.0708801?hl=it'),
-('Step 7', 'place/place1.jpg', 'https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1408.8900260266505!2d7.677198708144566!3d45.06997268906614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x47886d6d42be9a1f%3A0x8ea306681d25ab76!2sPiazza+Solferino%2C+10121+Torino+TO!3m2!1d45.0690615!2d7.6768027!4m5!1s0x47886d72386ad075%3A0x4d1acc0b146d0ab1!2sKensho%2C+Via+Mercanti%2C+16%2C+10122+Torino+TO!3m2!1d45.0708801!2d7.6803821999999995!5e0!3m2!1sit!2sit!4v1533717481937',
- 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum', '1',
- 'https://www.google.it/maps/dir/Piazza+Solferino,+10121+Torino+TO/Kensho,+Via+Mercanti,+16,+10122+Torino+TO/@45.0699727,7.6771987,18z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x47886d6d42be9a1f:0x8ea306681d25ab76!2m2!1d7.6768027!2d45.0690615!1m5!1m1!1s0x47886d72386ad075:0x4d1acc0b146d0ab1!2m2!1d7.6803822!2d45.0708801?hl=it'),
-('Step 8', 'place/place2.jpg', 'https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1408.8900260266505!2d7.677198708144566!3d45.06997268906614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x47886d6d42be9a1f%3A0x8ea306681d25ab76!2sPiazza+Solferino%2C+10121+Torino+TO!3m2!1d45.0690615!2d7.6768027!4m5!1s0x47886d72386ad075%3A0x4d1acc0b146d0ab1!2sKensho%2C+Via+Mercanti%2C+16%2C+10122+Torino+TO!3m2!1d45.0708801!2d7.6803821999999995!5e0!3m2!1sit!2sit!4v1533717481937',
- 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum', '1',
- 'https://www.google.it/maps/dir/Piazza+Solferino,+10121+Torino+TO/Kensho,+Via+Mercanti,+16,+10122+Torino+TO/@45.0699727,7.6771987,18z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x47886d6d42be9a1f:0x8ea306681d25ab76!2m2!1d7.6768027!2d45.0690615!1m5!1m1!1s0x47886d72386ad075:0x4d1acc0b146d0ab1!2m2!1d7.6803822!2d45.0708801?hl=it'),
-('Step 9', 'place/place3.jpg', 'https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d1408.8900260266505!2d7.677198708144566!3d45.06997268906614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x47886d6d42be9a1f%3A0x8ea306681d25ab76!2sPiazza+Solferino%2C+10121+Torino+TO!3m2!1d45.0690615!2d7.6768027!4m5!1s0x47886d72386ad075%3A0x4d1acc0b146d0ab1!2sKensho%2C+Via+Mercanti%2C+16%2C+10122+Torino+TO!3m2!1d45.0708801!2d7.6803821999999995!5e0!3m2!1sit!2sit!4v1533717481937',
- 'lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum', '1',
- 'https://www.google.it/maps/dir/Piazza+Solferino,+10121+Torino+TO/Kensho,+Via+Mercanti,+16,+10122+Torino+TO/@45.0699727,7.6771987,18z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x47886d6d42be9a1f:0x8ea306681d25ab76!2m2!1d7.6768027!2d45.0690615!1m5!1m1!1s0x47886d72386ad075:0x4d1acc0b146d0ab1!2m2!1d7.6803822!2d45.0708801?hl=it');
+('Intro', 'gs/parigi.jpg',
+'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41997.767878087456!2d2.3099789730333278!3d48.860870597075454!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParigi%2C+Francia!5e0!3m2!1sit!2sit!4v1538130004067',
+ 'Ciao amore mio,
+finalmente siamo arrivati a Parigi e ora possiamo dedicarci un po'' di attenzioni in più, dato che nell''ultimo periodo, tra un impegno e l''altro,
+non siamo riusciti a prendere un po'' di tempo solo per noi. Ammetto di essere stato un po'' lontano in questo periodo ma avevo la testa piena di pensieri e
+di cose da fare, ma ora sono tutto tuo e per dimostrartelo ho pensato di organizzare una giornata solo x noi, dove ad ogni tappa ti svelerò quella dopo così
+che tu non debba fare altro k amarmi e non pensare a nient''altro. Ti piace l''idea!??... Allora che aspetti, inserisci la password "singapore" e iniziamo.',
+  '1', ''
+),
+ ('Tappa 1', 'gs/arco.jpg', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.182614265682!2d2.292838815403974!3d48.87379520757631!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fec70fb1d8f%3A0xd9b5676e112e643d!2sArco+di+Trionfo!5e0!3m2!1sit!2sit!4v15381293260720',
+ 'Eccoci qui, questa è la prima tappa della giornata. Quando ho pensato ai possibili itinerari c''erano davvero troppi posti che avrei voluto vedere con te quindi
+ho scelto un tema e da li è stato tutto più semplice poi. Che faccio? Te lo devo già svelare? No dai penso che sarà facile capirlo durante la giornata quindi
+adesso ti lascio goderti tranquilla questa stupenda vista e nel frattempo ne approfitto per darti un paio di baci. Ah già.. Prima che me ne dimentichi,
+la password x la prossima tappa è "pechino".',
+   '1', 'https://www.google.it/maps/place/Arco+di+Trionfo/@48.873894,2.2945662,17z/data=!4m19!1m13!4m12!1m3!2m2!1d2.2950275!2d48.8742574!1m6!1m2!1s0x47e66fec70fb1d8f:0xd9b5676e112e643d!2sArco+di+Trionfo,+Place+Charles+de+Gaulle,+75008+Paris,+Francia!2m2!1d2.2950275!2d48.8737917!3e2!3m4!1s0x47e66fec70fb1d8f:0xd9b5676e112e643d!8m2!3d48.8737917!4d2.2950275?hl=it&authuser=0'
+),
+('Tappa 2', 'gs/pasticceria.jpg', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.338987454597!2d2.300875715412453!3d48.870813979288634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fc249be485d%3A0x2be3a396c8fd4569!2sLadur%C3%A9e+Paris+Champs+Elys%C3%A9es!5e0!3m2!1sit!2sit!4v1538130423756',
+ 'Dopo un inizio di giornata così faticoso e sapendo quante cose ci aspttano ancora oggi ho pensato che ci volesse fare un bel pieno di zuccheri e così eccoci qua.
+Questa è una delle più famose e antiche pasticcerie di Parigi e sapendo quanto il mio amore e golosa non potevamo non farci un salto.
+Bhe ovviamente sono più buoni i tuoi dolcini questo è scontato però dai per oggi possiamo anche fare un''eccezione e assaggiare anche questi. Alla fine cosa si può volere di più?
+Siamo a Parigi, in una delle vie più famose, in una delle pasticcerie piu rinomate e siamo insieme. Direi che è tutto perfetto... ma tutti questi dolcetti non vanno
+giu da soli e allora direi aiutiamoli a scendere facendo ancora due passi fino alla prossima tappa. La password è "oslo".',
+ '1', 'https://www.google.it/maps/place/Ladur%C3%A9e+Paris+Champs+Elys%C3%A9es/@48.870814,2.3008757,17z/data=!3m1!4b1!4m5!3m4!1s0x47e66fc249be485d:0x2be3a396c8fd4569!8m2!3d48.870814!4d2.3030644?hl=it&authuser=0'
+),
+('Tappa 3', 'gs/cartoleria.jpg', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.8251724593915!2d2.3315350154120833!3d48.86154407928774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e21578fd5f3%3A0xd0927ba505a05ea0!2sDelfonics+Paris+Louvre!5e0!3m2!1sit!2sit!4v1538130677309',
+ 'Poi non dire che non ti conosco eh, guarda un po dove ti ho portato. Pure a Parigi ti trovo una bella cartoleria dove guardare un pò se si trova qualcosa d''interessante
+per poter dare libero sfogo alla tua creatività. Penso di avertelo gia detto spesso ma per sicurezza te lo ripeto, "Adoro il tuo lato creativo", davvero è una tua
+peculiarità e a me piace un sacco questo lato di te perchè ti rende ancora più unica. Bene ora possiamo passare alla prossima tappa e la password è "stoccolma".
+Ah che sbadato aspetta un attimo...devo comprare una cosa....chiassa a cosa servirà.',  '1', 'https://www.google.it/maps/place/Delfonics+Paris+Louvre/@48.8615441,2.331535,17z/data=!3m2!4b1!5s0x47e66e2f547c3895:0x6898ed8f2380d23c!4m5!3m4!1s0x47e66e21578fd5f3:0xd0927ba505a05ea0!8m2!3d48.8615441!4d2.3337237?hl=it&authuser=0'
+),
+('Tappa 4', 'gs/ponte.jpg', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.993078322005!2d2.3353197154119827!3d48.85834237928745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e271892bc5b%3A0x4a478d68db24dc95!2sPont+des+Arts!5e0!3m2!1sit!2sit!4v1538131294087',
+ 'Bene, bene, bene...è gia giunta l''ora di svelarti a cosa serve l''acquisto di prima, effettivamente dovevo lasciarti un pèò di più a pensarci sù. però dai vabeh
+mi sento buono gg e non ti voglio tenere ancora oltre sulle spine. Qui abbiamo unostupendo lucchetto che anche se piccolo racchiude tutto il nostro amore e i 10
+anni passati assieme. Uno alla volta adesso scriveremo un qualcosa che vogliamo rimanga per sempre vincolato a noie al nostro amore come farà questo lucchetto e poi lo
+chiuderemo e andremo avanti per il nostro tour e con le nostre vite...sapendo però che ora anche tutto il resto del mondo conosce il nostro amore. La password
+x la prossima tappa è "amsterdam".',
+ '1', 'https://www.google.it/maps/place/Pont+des+Arts/@48.8583424,2.3353197,17z/data=!3m1!4b1!4m5!3m4!1s0x47e66e271892bc5b:0x4a478d68db24dc95!8m2!3d48.8583424!4d2.3375084?hl=it&authuser=0'
+),
+('Tappa 5', 'gs/notreDame.jpg', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5250.6164122404825!2d2.3482875767606934!3d48.85233296714732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671e39dd448af%3A0xe95d8ec82cfaf643!2sNotre+Dame%2C+Parigi%2C+Francia!5e0!3m2!1sit!2sit!4v1538131377475',
+ 'Ero molto in dubbio se venire qua proprio oggi o vederla un altro giorno più tranquillamente però dato che l''altro giorno quando ne stavamo parlando mi sei sembrata
+ così felice che una delle prime tappe fosse questa che non potevo così apertamente deludere le tue aspettative. E allora non perdiamo tempo che abbiamo ancora un sacco di cose
+ da vedere oggi e non siamo neanche a metà. La prossima password è "mosca".',
+ '1', 'https://www.google.it/maps/place/Notre+Dame,+Parigi,+Francia/@48.852333,2.3482876,16z/data=!3m1!4b1!4m5!3m4!1s0x47e671e39dd448af:0xe95d8ec82cfaf643!8m2!3d48.8527288!4d2.3505635?hl=it&authuser=0'
+),
+('Tappa 6', 'gs/crocera.jpg', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.8310147162347!2d2.293750415412098!3d48.86143267928773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fe115d97791%3A0x5a01f7d357848019!2sPort+de+la+Bourdonnais%2C+75007+Paris%2C+Francia!5e0!3m2!1sit!2sit!4v1538131623648',
+ 'Chissa perchè siamo arrivati fin qua, non sarà mica che il tuo amore bellissimo e stra dolce ha organizzato di fare una romanticissima crocera sulla Senna??
+No dai sarebbe troppo dolce da parte mia organizzare tutto ciò.........e invece ti sorprendo ancora di più dicendoti che non ci aspetta solo un rilassante giro in barca ma
+anche uno stupendo pranzetto con vista spettacolare al fine di questa crocera. Si si ok adesso non ti sconcentrare pensando gia al cibo ma inizia a goderti questa
+bella esperienza. La password x la prossima tappa è "ilcairo".',
+  '1', 'https://www.google.it/maps/place/Port+de+la+Bourdonnais,+75007+Paris,+Francia/@48.8614327,2.2937504,17z/data=!3m1!4b1!4m5!3m4!1s0x47e66fe115d97791:0x5a01f7d357848019!8m2!3d48.8614327!4d2.2959391?hl=it&authuser=0'
+),
+('Tappa 7', 'gs/hotel.jpg', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.588902981113!2d2.2914833154130574!3d48.88511297929017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f90fdd8be55%3A0x21a78b4f15ff737!2sHotel+Champerret+Heliopolis!5e0!3m2!1sit!2sit!4v1538131785045',
+ 'Spero che la giornata stia andando bene e che sia stato tutto di tuo gradimento fino ad ora. Stanca?? Effettivamente la giornata è gia stata lunga e impegnativa
+quindi ho pensato che potesse starci bene un pò di pausa rifacendo un salto in hotel così da poterci fare una bella doccia rinvigorente e tornare poi in pista più
+carichi di prima. Bhe ovviamente se c''è tempo potremmo anche iniziare ad approffitarne un pò dato k la sera è ancora lontana e ormai è già troppo che ti voglio!!
+Si Si ok non mi sono dimenticato... la password x la prossima tappa è "----".',
+  '1', 'https://www.google.it/maps/place/Hotel+Champerret+Heliopolis/@48.885113,2.2914833,17z/data=!3m1!4b1!4m7!3m6!1s0x47e66f90fdd8be55:0x21a78b4f15ff737!5m1!1s2018-10-27!8m2!3d48.885113!4d2.293672?hl=it&authuser=0'
+),
+('Tappa 8', 'gs/torre.jpg', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.843227283997!2d2.3197812154113207!3d48.84212897928589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671ccbbfe0d71%3A0x4b17c1512f022fa9!2sTour+Montparnasse%2C+33+Avenue+du+Maine%2C+75015+Paris%2C+Francia!5e0!3m2!1sit!2sit!4v1538131875058',
+ 'Rieccoci in pista, spero un pò più riposati perchè la fine della giornata non è proprio vicina e ci sono ancora molte emozioni da vivere insieme. Per rimanere coerenti
+con il tema della giornata ho trovato quest''altro posto di cui ad essere sincero non conoscevo l''esistenza ma che appena ho visto mi è sembrato perfetto per una vista
+a 360° di Parigi. La password x la prossima tappa è "ottawa".',
+  '1', 'https://www.google.it/maps/place/Tour+Montparnasse,+33+Avenue+du+Maine,+75015+Paris,+Francia/@48.842129,2.3197812,17z/data=!3m1!4b1!4m5!3m4!1s0x47e671ccbbfe0d71:0x4b17c1512f022fa9!8m2!3d48.842129!4d2.3219699?hl=it&authuser=0'
+),
+('Tappa 9', 'gs/giapu.jpg', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.3286597558576!2d2.3260113154124915!3d48.871010879288676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e33e535fe27%3A0x14fb7b12d95a90a8!2sAO+IZAKAYA!5e0!3m2!1sit!2sit!4v1538131959520',
+ 'Allora facciamo il punto della situazione...Colazione??Fatta...Pranzo??Fatto..Cosamanca quindi??Beh direi che è semplice la risposta ma ti posso assicurare che non è
+stato per niente semplice trovare il posto giusto. Cioè, la mia idea era òotarti in una di quei bellissimi ristoranti con una stella Michelin..peccato che evidentemnete sono gia
+troppo pieni di soldi e durante il weekend sono praticamente tutti chiusi e quelli che restano aperti hanno una lista d''attesa imbarazzante.
+Ma non perdiamoci d''animo, non sarà un ristorante stellato ma è il primo ristorante senza stelle della sua categorie quindi dovremmo stare abbastanza sicuri dai.
+Ora se pensi che la giornata sia finita qui ti sbagli di grosso, ci sono ancora un paio di tappe e la password è "reykjavik".',
+ '1', 'https://www.google.it/maps/place/AO+IZAKAYA/@48.8710109,2.3260113,17z/data=!3m1!4b1!4m5!3m4!1s0x47e66e33e535fe27:0x14fb7b12d95a90a8!8m2!3d48.8710109!4d2.3282?hl=it&authuser=0'
+),
+('Tappa 10', 'gs/muro.jpg', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.6051559313278!2d2.3363798154130673!3d48.88480317929016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e44e2a227af%3A0x641930356f5c6782!2sWall+of+Love!5e0!3m2!1sit!2sit!4v1538132187715',
+ 'Devo ammettere che questa non era una vera è propria tappa ma dato che si trovava sulla strada mi sembrava giusto pasarci e rendere ttributo all''amore universale.
+La password x la prossima tappa è "atene".',
+ '1', 'https://www.google.it/maps/place/Wall+of+Love/@48.8848032,2.3363798,17z/data=!3m1!4b1!4m5!3m4!1s0x47e66e44e2a227af:0x641930356f5c6782!8m2!3d48.8848032!4d2.3385685?hl=it&authuser=0'
+),
+('Tappa 11', 'gs/fine.jpg', 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10494.129172177742!2d2.334334737301296!3d48.88619201864194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e432e04c811%3A0xc63ce48b5005548d!2sMontmartre!5e0!3m2!1sit!2sit!4v1538136488637',
+ 'Dulcis in fundus eccoci arrivata alla conclusione di quella che spero essere stata una piacevole giornata. Questa è l''ultima tappa e ho pensato quale posto migliore per concludere
+in bellezza?? Ebbene si, prioprio il quartiere di cui mi parli sempre tanto, uno dei più caratteristici di Parigi, dove l''arte e il romanticismo regna sovrano.
+Prima di concludere definitivamnete questo Tour però vorrei dirti un paio di cose che in quest''ultimo periodo non sono riuscito molto a dirti.
+Prima di tutto vorrei iniziare ringraziandoti di cuore per tutto quello che fai per me ma sopratutto per quanto mi sei stata vicina nei giorni in cui non sono stato bene.
+Ti sei presa cura di me in una maniera che non  i aspettavo e questo mi ha fatto pensare davvero che tu fossi la persona giusta con cui condividere una vita perchè sò che rimarrai sempre al mio fianco
+ e questo voglio che lo sappia bene anche tu..io ci sarò sempre per te potri fare sempre affidamente sul mio amore.
+ Cavolo alla fine sono ben 10 anni che stiamo assieme e abbiamo davvero vissuto un sacco di esperienze insieme..siamo cresciuti insieme e quello che abbiamo vissuto
+ a fatto si che noi diventassimo quello che siamo ora. Si ok nessuno dei due è perfetto ma sono sicuro nel dire che però siamo perfetti uno per l''altro.
+ Non potrei più immaginarmi senza di te ed è per questo che qui ti prometto che per me saremo per sempre una cosa sola e spero che questo valga anche per te.',
+   '1', 'https://www.google.it/maps/place/Montmartre/@48.886192,2.3343347,15z/data=!3m1!4b1!4m5!3m4!1s0x47e66e432e04c811:0xc63ce48b5005548d!8m2!3d48.8861929!4d2.3430895?hl=it&authuser=0'
+);

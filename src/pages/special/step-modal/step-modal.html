@@ -8,25 +8,22 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding class="sfondo1 fontT">
+<ion-content class="sfondo1 fontT">
 
-  <ion-card class="mg-b" *ngIf="step">
+  <div  *ngIf="step">
+      <iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(step.urlMap)" width="100%" height="300px" frameborder="0" style="border:0"
+              allowfullscreen *ngIf="step && !show">
+      </iframe>
 
-    <iframe [src]="sanitizer.bypassSecurityTrustResourceUrl(step.urlMap)" width="100%" height="300px" frameborder="0" style="border:0"
-            allowfullscreen></iframe>
+    <img src="../../../assets/imgs/special-day/{{ step.url }}" *ngIf="step && show">
 
-    <ion-card-content>
-      <p class="parag fontT">{{ step.description }}</p>
-    </ion-card-content>
+    <ion-card class="mg-b" *ngIf="step && (show || (step.id == 1))">
+      <ion-card-content>
+        <p class="parag fontT">{{ step.description }}</p>
+      </ion-card-content>
+    </ion-card>
 
-    <ion-row>
-      <ion-col>
-        <button ion-button icon-start class="f-16 b-right" item-end (click)="load($event, step.www)">
-          <ion-icon name="navigate"></ion-icon>
-          Start
-        </button>
-      </ion-col>
-    </ion-row>
-  </ion-card>
+    <button ion-button block (click)="showStep()" *ngIf="step && !show && (step.id != 1)">Arrivati</button>
 
+  </div>
 </ion-content>

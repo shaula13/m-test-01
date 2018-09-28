@@ -3,7 +3,7 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Giornata regalo</ion-title>
+    <ion-title>Sorpresa</ion-title>
   </ion-navbar>
 </ion-header>
 
@@ -29,7 +29,7 @@
       </button>
     </ion-list>
 
-    <ion-buttons *ngIf="steps.length < 9" class="title-list btn-mg fontT">
+    <ion-buttons *ngIf="steps.length < 12" class="title-list btn-mg fontT">
       <button ion-button (click)="goToNewStep()">Prossimo Step</button>
     </ion-buttons>
 

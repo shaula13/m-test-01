@@ -13,6 +13,8 @@ export class StepModalPage extends BaseComponent{
   id: number;
   step = {};
 
+  show = false;
+
   constructor(protected navCtrl: NavController, protected navParams: NavParams, protected databaseprovider: DatabaseProvider,
               protected loadCtrl: LoadingController, public sanitizer: DomSanitizer) {
     super(navCtrl, navParams, databaseprovider, loadCtrl);
@@ -23,12 +25,16 @@ export class StepModalPage extends BaseComponent{
   }
 
   async loadData() {
-    //this.spinnerShow(1000);
+    this.spinnerShow(1000);
     await this.loadStepForId().then(data => { this.step = data; });
   }
 
   async loadStepForId() {
     return await this.databaseprovider.getStepForId(this.id);
+  }
+
+  async showStep() {
+    this.show = !this.show;
   }
 
 }
